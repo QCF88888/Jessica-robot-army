@@ -4,3 +4,6 @@
 
 ## 20261101 (stars)
 - README hero、SVG banner、徽章、star-history、快速开始、贡献指南、行为准则、Issue 模板、Roadmap、姊妹库互链。
+
+## 20261101 (ops-log)
+- 新增 [ops-log/2026-11-01_open-source-launch.md](ops-log/2026-11-01_open-source-launch.md)：开源发布可复用流程。

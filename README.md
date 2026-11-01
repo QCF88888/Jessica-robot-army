@@ -75,7 +75,7 @@ See [results/](results/README.md).
 - 翻译 README 为德语或其他语言 / Translate README
 - 分享你的 Bot 团队 KPI 数据（仅汇总）/ Share aggregate KPI results
 
-Roadmap: [ROADMAP.md](ROADMAP.md)
+Roadmap: [ROADMAP.md](ROADMAP.md) · Ops log: [2026-11-01 open-source launch](ops-log/2026-11-01_open-source-launch.md)
 
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=j19-plusone/Jessica-robot-army&type=Date)](https://star-history.com/#j19-plusone/Jessica-robot-army&Date)
