@@ -1,11 +1,26 @@
-# Jessica的Robot军团 · Jessica's Robot Army
+<p align="center"><img src="assets/banner.svg" alt="Jessica's Robot Army · Jessica的Robot军团" width="100%"></p>
 
-> **20 个 AI Bot，一个人运营一支团队。** 来自真实多 Bot 工作流的部署方法、治理红线、KPI 考核与验证结果。
-> **20 AI bots, one human, one team.** How to run your Robot team — from real multi-bot workflow experience.
+<h1 align="center">Jessica's Robot Army · Jessica的Robot军团</h1>
+<p align="center"><b>一个人 + 20 个 AI Bot，像公司一样运转。 / One human + 20 AI bots, run like a company.</b></p>
+<p align="center">
+<a href="https://github.com/j19-plusone/Jessica-robot-army/stargazers"><img src="https://img.shields.io/github/stars/j19-plusone/Jessica-robot-army?style=flat-square" alt="stars"></a>
+<a href="LICENSE"><img src="https://img.shields.io/github/license/j19-plusone/Jessica-robot-army?style=flat-square" alt="license"></a>
+<a href="https://github.com/j19-plusone/Jessica-robot-army/commits/main"><img src="https://img.shields.io/github/last-commit/j19-plusone/Jessica-robot-army?style=flat-square" alt="last commit"></a>
+</p>
+<p align="center"><a href="#中文">中文</a> · <a href="#english">English</a></p>
 
-![stars](https://img.shields.io/github/stars/j19-plusone/Jessica-robot-army?style=flat-square) ![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+- **20 个岗位模板 / 20 role templates** (000–019): 职责、边界、例行任务、KPI / duties, boundaries, routines, KPIs
+- **治理红线 + 额度规则 / Governance & quota rules** that stop overlap, duplicate sends and token waste
+- **真实运行数据 / Real-run results**: e.g. ~87% routine success (one-day sample, 13/15, 0 timeouts)
 
-[中文](#中文) · [English](#english)
+## Quick start / 一条命令开始
+```bash
+git clone https://github.com/j19-plusone/Jessica-robot-army && mkdir -p my-bot-team && cp -r Jessica-robot-army/roles Jessica-robot-army/governance ./my-bot-team/
+```
+
+> ⭐ **Why star this / 为什么点星**：如果你在跑不止一个 Agent，这里的分工与治理方法能直接复用。If you run more than one agent, star it to keep the playbook handy.
+
+**Related / 相关**: [Jessica-Skills-real-test-database](https://github.com/j19-plusone/Jessica-Skills-real-test-database) — 姊妹库：工具实测点评 / Sister repo: hands-on tool reviews
 
 ## 中文
 **为什么**：单个 Agent 技能很多，但"一支 Bot 团队怎么分工、不越界、不烧额度"没人讲。本仓库开源的是方法、工作流、KPI 和验证结果，不含任何具体事项或内部对话。
@@ -52,8 +67,18 @@
 ## Results / 验证结果
 See [results/](results/README.md).
 
+
+
+## Contributing / 参与贡献
+欢迎 PR！见 [CONTRIBUTING.md](CONTRIBUTING.md)。Good first issues:
+- 为你的行业补一个岗位模板 / Add a role template for your industry
+- 翻译 README 为德语或其他语言 / Translate README
+- 分享你的 Bot 团队 KPI 数据（仅汇总）/ Share aggregate KPI results
+
+Roadmap: [ROADMAP.md](ROADMAP.md)
+
 ## Star History
-<!-- placeholder: [![Star History Chart](https://api.star-history.com/svg?repos=j19-plusone/Jessica-robot-army&type=Date)](https://star-history.com/#j19-plusone/Jessica-robot-army&Date) -->
+[![Star History Chart](https://api.star-history.com/svg?repos=j19-plusone/Jessica-robot-army&type=Date)](https://star-history.com/#j19-plusone/Jessica-robot-army&Date)
 
 ## License
 MIT
