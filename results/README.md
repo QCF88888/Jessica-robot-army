@@ -1,9 +1,13 @@
-# 验证结果（仅汇总数据）
-| 指标 | 数值 | 期间 |
+# Public evaluation template / 公开评估模板
+
+Published: 2026-11-05 23:30 CET · Europe/Zurich · [000].
+
+No real internal operating results are published here. Historical internal samples have been removed from this public proposal, not relabelled as synthetic evidence.
+
+| Metric / 指标 | Value / 值 | Evidence / 证据 |
 |---|---|---|
-| 团队规模 | 20 个 Bot（000–019） | 2026-10 |
-| 例行任务数 | 约 26 个 | 2026-10 基线 |
-| 单日例行成功率 | 约 87%（15 次中 13 次），0 超时 | 抽样 1 天 |
-| 治理健康评分 | 7/10 | 首次评估 |
-| 发现的典型问题 | 报告重叠、重复发送、加急滥用、设备离线致归档积压 | 2026-10 |
-| 已落地修复 | 重叠简报分工、单一负责制、归档补存 | 2026-10 |
+| Accepted task success / 验收通过率 | Not provided / 未提供 | Synthetic test report or separately approved public benchmark |
+| Latency / 时延 | Not provided / 未提供 | State sample size, period and method |
+| Quality and governance / 质量与治理 | Not provided / 未提供 | Reproducible tests; no customer or internal business data |
+
+未知不写 0；模拟不当生产成绩；真实内部结果未经批准不公开，汇总后也须审查。
