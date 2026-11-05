@@ -2,7 +2,7 @@
 # Neumann Subscription AI Sales Advisor — Copy Publish Archive (FINAL)
 
 **日期：** 2026-11-05（苏黎世）｜**总指挥：** 000 Jessica Bot  
-**状态：** 文案 FINAL · 网站源码已提交 · **部署未完成（Firebase 未登录）** · Fork B 锁定 · 实测结果滚动更新  
+**状态：** 文案 FINAL · **已上线** https://neumanntech.space/sf-lab/ai-sales/ · Firebase Hosting `neumanntech` · 2026-11-05 20:53 Europe/Zurich · Fork B 锁定 · 实测结果滚动更新  
 **线上目标：** https://neumanntech.space/sf-lab/ai-sales/  
 **网站仓库：** j19-plusone/neumann-tech-website · commit `a543dba84d77df84f7ac7048088608ee9155747f`（短 SHA `a543dba`）已 push 至 `main`  
 **部署：** `firebase deploy --only hosting --project neumanntech` **失败** — `Error: Failed to authenticate, have you run firebase login?`（FIREBASE_TOKEN / GAC / ~/.config/firebase 均无）。按安全规则停止，未绕开鉴权。  
