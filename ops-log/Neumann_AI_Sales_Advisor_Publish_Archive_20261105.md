@@ -2,8 +2,11 @@
 # Neumann Subscription AI Sales Advisor — Copy Publish Archive (FINAL)
 
 **日期：** 2026-11-05（苏黎世）｜**总指挥：** 000 Jessica Bot  
-**状态：** 文案 FINAL 存档 · **Fork B 锁定**（参照 Zobi 模型自建，不用 Shopify）· **实测结果滚动更新**  
-**线上：** 尚未改 neumanntech.space；上线页建议 `/sf-lab/ai-sales/`（待部署指令）  
+**状态：** 文案 FINAL · 网站源码已提交 · **部署未完成（Firebase 未登录）** · Fork B 锁定 · 实测结果滚动更新  
+**线上目标：** https://neumanntech.space/sf-lab/ai-sales/  
+**网站仓库：** j19-plusone/neumann-tech-website · commit `a543dba84d77df84f7ac7048088608ee9155747f`（短 SHA `a543dba`）已 push 至 `main`  
+**部署：** `firebase deploy --only hosting --project neumanntech` **失败** — `Error: Failed to authenticate, have you run firebase login?`（FIREBASE_TOKEN / GAC / ~/.config/firebase 均无）。按安全规则停止，未绕开鉴权。  
+**线上核验（苏黎世 2026-11-05 ~20:19）：** `/sf-lab/ai-sales/` → **HTTP 404**；`/sf-lab/` 仍为旧版（无 SF-006）。待 Jessica 完成 Firebase 登录或提供合法部署凭证后重跑部署。  
 **工作草案（已被本文件取代）：** `Neumann_Zobi_AI_Sales_Publish_Draft_20261105.md`
 
 ## 1. 精准定位
@@ -54,3 +57,10 @@ Neumann is building its own AI sales advisor on Zobi's sales model, designed for
 - 命名：ASCII + 文档名 + YYYYMMDD；文案改版生成新日期文件并替换旧版。
 - 实测结果：在本文件追加 `## 实测更新 YYYY-MM-DD` 小节（或新日期版替换），列站点、能力、指标、结论。
 - 镜像：QCF88888/Jessica-robot-army 与 j19-plusone/Jessica-robot-army `ops-log/` 同步。
+
+
+## 部署记录 2026-11-05（苏黎世）
+- 页面：`public/sf-lab/ai-sales/index.html`（中英短稿 + A1–A8 + 合规 + CTA `/consultation/` `/sf-lab/`）
+- SF LAB 索引：新增 SF-006 卡片，链到 `/sf-lab/ai-sales/`
+- Git：`a543dba` → origin/main
+- Firebase：认证失败，线上未更新；重试条件 = `firebase login`（j19.plusone@gmail.com）或合法 CI token
