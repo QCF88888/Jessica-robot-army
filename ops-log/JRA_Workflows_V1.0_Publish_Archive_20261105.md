@@ -9,10 +9,15 @@
 ## 已落盘
 - `workflows/Jessicas_Robot_Army_Workflows_Rulebook_V1.0_20261105.md`
 - `workflows/Jessicas_Robot_Army_Workflows_Rulebook_V1.0_20261105.pdf`（优化排版重出）
-- Neumann：`https://neumanntech.space/robot-army/` + PDF 下载
+- `workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105.mp4`（主演示 · Video B）
+- `workflows/video/Jessicas_Robot_Army_Workflow_Demo_Alt_V1.0_20261105.mp4`（对照 · Video A）
+- `workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105_poster.jpg`
+- `workflows/video/demo_B_primary.mov` / `demo_A_alt.mov`（源文件）
+- Neumann：`https://neumanntech.space/robot-army/`（手册 PDF/MD + 主演示视频 + 8 语切换）
 
-## 待补
-- Video B（及可选 A）二进制需落到 `/workspace` 后转为 mp4 挂到 `/robot-army/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105.mp4` 再部署。聊天附件路径对 Shell 不可见。
+## 发布状态（2026-11-05 晚）
+- GitHub：JRA 双远程（QCF88888 + j19-plusone）+ `neumann-tech-website`
+- Firebase Hosting `neumanntech`：`/robot-army/` 已部署
 
 ## 规则要点（已写入手册）
 000 命名为 **MM 总统筹**；编号永不复用；四类岗位；先复用再扩容；005 安全边界；完成=验收通过；演示≠已部署。
