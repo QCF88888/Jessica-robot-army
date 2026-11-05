@@ -1,219 +1,162 @@
-<p align="center"><img src="assets/banner.svg" alt="Jessica's Robot Army · Jessica的Robot军团" width="100%"></p>
+# Jessica’s Robot Army
 
-<h1 align="center">Jessica's Robot Army · Jessica的Robot军团</h1>
-<p align="center"><b>一个人 + 20 个 AI Bot，像公司一样运转。 / One human + 20 AI bots, run like a company.</b></p>
-<p align="center">
-<a href="https://github.com/j19-plusone/Jessica-robot-army/stargazers"><img src="https://img.shields.io/github/stars/j19-plusone/Jessica-robot-army?style=flat-square" alt="stars"></a>
-<a href="LICENSE"><img src="https://img.shields.io/github/license/j19-plusone/Jessica-robot-army?style=flat-square" alt="license"></a>
-<a href="https://github.com/j19-plusone/Jessica-robot-army/commits/main"><img src="https://img.shields.io/github/last-commit/j19-plusone/Jessica-robot-army?style=flat-square" alt="last commit"></a>
-</p>
-<p align="center"><a href="#中文">中文</a> · <a href="#english">English</a></p>
+**A business-driven AI-bot team rulebook: reuse first, scale only when needed, deliver quality at low cost.**
 
-> **三大原则 / Three principles:** 可验证 · 可执行 · 可考核 / Verifiable · Executable · Auditable
+[![GitHub Stars](https://img.shields.io/github/stars/QCF88888/Jessica-robot-army?style=flat-square)](https://github.com/QCF88888/Jessica-robot-army/stargazers)
+[![MIT License](https://img.shields.io/github/license/QCF88888/Jessica-robot-army?style=flat-square)](https://github.com/QCF88888/Jessica-robot-army/blob/main/LICENSE)
 
-- **20 个岗位模板 / 20 role templates** (000–019): 职责、边界、例行任务、KPI / duties, boundaries, routines, KPIs
-- **治理红线 + 额度规则 / Governance & quota rules** that stop overlap, duplicate sends and token waste
-- **真实运行数据 / Real-run results**: e.g. ~87% routine success (one-day sample, 13/15, 0 timeouts)
-- **项目代号表 / Project codenames** — 7 projects, no partner names exposed
-- **AI Scars 工具库 / AI Scars toolbox** — 6-week scoring ladder (7/14/21/35/42 days)
+**⭐ Star and contribute at [QCF88888/Jessica-robot-army](https://github.com/QCF88888/Jessica-robot-army) — our ONE public promotion entry.** All Star and contribution calls point there, never to the development mirror.
 
-## Quick start / 一条命令开始
+An independent open-source project within **[Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/)**, not a claim that an autonomous production platform is already shipped.
+
+## Watch the workflow / 工作流演示
+
+[![Play the Robot Army workflow simulation](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105_poster.jpg)](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105.mp4)
+
+▶ [Watch MP4](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105.mp4) · [Watch on the Neumann website](https://neumanntech.space/robot-army/)
+
+**Simulation, not live production. / 系统行为模拟，非生产实时数据。** Historical video roles and watermarks are illustrative; current public rules take precedence.
+
+## Bot role map · 000–019 / 岗位图
+
+```mermaid
+flowchart TB
+  B000["000 General Commander / 总指挥官"]
+  B001["001 Chief of Staff / 幕僚长"]
+  B002["002 Scheduler / 日程官"]
+  B003["003 CFO / 财务官"]
+  B004["004 Capital Operations / 资本运营官"]
+  B005["005 Governance / 治理官"]
+  B006["006 Track · Education Consulting / 教育咨询赛道"]
+  B007["007 Track · Health-tech / 健康科技赛道"]
+  B008["008 Track · Foundation & Nonprofit / 公益基金赛道"]
+  B009["009 Media Operations / 媒体运营官"]
+  B010["010 Email Administrator / 邮件管理员"]
+  B011["011 Competitive Intelligence / 竞品监测"]
+  B012["012 Travel Services / 全球旅行官"]
+  B013["013 Track · Sports / 体育赛道"]
+  B014["014 Track · Hackathon & Events / 赛事活动赛道"]
+  B015["015 Track · HPC Infrastructure / 算力基础设施赛道"]
+  B016["016 Global Market Intelligence / 全球股市情报"]
+  B017["017 Device and Archive / 设备与归档"]
+  B018["018 Track · Consumer App / 消费应用赛道"]
+  B019["019 Track · Biotech / 生物科技赛道"]
+  B000 --> B001
+  B000 --> B002
+  B000 --> B003
+  B000 --> B004
+  B000 --> B005
+  B000 --> B006
+  B000 --> B007
+  B000 --> B008
+  B000 --> B009
+  B000 --> B010
+  B000 --> B011
+  B000 --> B012
+  B000 --> B013
+  B000 --> B014
+  B000 --> B015
+  B000 --> B016
+  B000 --> B017
+  B000 --> B018
+  B000 --> B019
+  B005 -. "permission and budget gates" .-> B000
+```
+
+Public role labels follow the V1.1 roster, with the private partner name behind 019 generalised. Arrows mean coordination/reporting—not a ban on direct bot collaboration. This is a **role-definition map**, not live deployment or performance telemetry. Role types and instance permissions still require approval.
+
+
+## Open source · Neumann Solo Founder Lab
+
+Jessica’s Robot Army is an **MIT-licensed open-source project of [Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/)**: a reusable framework for a business-driven team of AI bots. Add, reuse, pause or retire bot resources according to verified demand—not headcount targets. Optimise for **efficiency, speed, quality and low cost** without weakening safety.
+
+- **Canonical repository:** https://github.com/QCF88888/Jessica-robot-army (`main`).
+- **Development-sync mirror only:** https://github.com/j19-plusone/Jessica-robot-army. Its README redirects visitors to QCF88888. Do not ask for Stars or contributions on the mirror.
+- **Open:** code, role definitions, workflow rules and demos. The main snapshot currently contains documentation and media; experimental code is on a separate development branch and is not represented as merged production code.
+- **Never public:** API keys, secrets, account credentials, customer/client data, personal records, internal financial/operating data, partner deal terms or unapproved agreements. Keep these in an access-controlled private repository or approved vault—not in commits, issues, PRs, screenshots, PDFs or videos.
+- **Project site:** https://neumanntech.space/robot-army/
+- **V1.1 public rulebook:** [Markdown](workflows/Jessicas_Robot_Army_Workflows_Rulebook_V1.1_20261105.md) · [PDF](workflows/Jessicas_Robot_Army_Workflows_Rulebook_V1.1_20261105.pdf).
+- **Demos:** [primary simulation](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105.mp4) · [alternative simulation](workflows/video/Jessicas_Robot_Army_Workflow_Demo_Alt_V1.0_20261105.mp4). All demos are **simulations, not live production telemetry**. Historical video titles, role names and version watermarks do not override the current rulebook.
+
+### Contribute
+Fork the canonical repository, create a focused branch and open a pull request against its `main`. Use Issues for public, non-sensitive bugs or proposals. Read [CONTRIBUTING](CONTRIBUTING.md), [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md), [SECURITY](SECURITY.md) and [AI_COLLABORATION](AI_COLLABORATION.md) first. Security reports must not go in public Issues.
+
+## 简体中文 · 开源说明
+
+Jessica’s Robot Army 是 [Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/) 旗下的 **MIT 开源项目**。按真实业务需求复用、新增、休眠或退出机器人资源，原则是 **高效、快捷、质量、低成本**，不以数量为成绩，不牺牲安全。
+
+- **主仓库：** QCF88888/Jessica-robot-army，`main` 为唯一事实源；j19-plusone/Jessica-robot-army 从主仓同步，只作开发同步镜像，不作宣传入口，Star 与贡献统一引导至 QCF88888。
+- **公开范围：** 代码、岗位定义、工作流规则、演示。当前 main 快照以文档和媒体为主，开发分支的实验代码不视为已合并或已投产。
+- **严禁进入公开仓库：** 密钥、账户凭证、客户资料、个人档案、内部经营与财务数据、合作条款和未经批准的协议；Issue、PR、截图、PDF、视频也适用。敏感材料只存受控私库或凭证库。
+- **网站：** https://neumanntech.space/robot-army/；[V1.1 手册](workflows/Jessicas_Robot_Army_Workflows_Rulebook_V1.1_20261105.md) 为公开脱敏版，非内部运行台账。**所有演示均为模拟，不是实时生产数据**；历史水印不作为现行版本或岗位依据。
+- **参与共建：** Fork 主仓库 → 独立分支 → PR 到主仓 `main`；非敏感建议可提 Issue。遵守贡献指南与行为准则，安全问题按 SECURITY 私下报告。
+
+## Install / quick start — use the rulebook, not an invented runtime
+
+**Today, canonical main is a specifications/rules-and-media repository. There is no runnable bot engine, package installer, service entry point or production deployment command in this main snapshot.** Experimental Python code exists on a separate development branch; it is not merged, installed or endorsed by this quick start.
+
+**当前 main 是规则、岗位模板与演示仓库，不是已可安装运行的机器人平台。** 以下命令只下载文档并复制模板，不会启动机器人。
+
+### Reuse / 使用岗位模板
+
 ```bash
-git clone https://github.com/j19-plusone/Jessica-robot-army && mkdir -p my-bot-team && cp -r Jessica-robot-army/roles Jessica-robot-army/governance ./my-bot-team/
+git clone https://github.com/QCF88888/Jessica-robot-army.git
+mkdir -p my-bot-team
+cp -r Jessica-robot-army/roles Jessica-robot-army/governance ./my-bot-team/
 ```
 
-> ⭐ **Why star this / 为什么点星**：如果你在跑不止一个 Agent，这里的分工与治理方法能直接复用。If you run more than one agent, star it to keep the playbook handy.
+1. Start with 000 coordination and 005 governance; add roles only for demonstrated needs.
+2. Define acceptance criteria, permissions, budget and exit conditions before execution.
+3. Follow [handoff](workflows/cross-bot-handoff.md), [daily review](workflows/daily-report.md) and [archiving](workflows/archiving.md) rules.
+4. Use [KPI templates](kpi/README.md), [financial schema](finance-modules.md) and [results template](results/README.md) without real business data.
 
-**Related / 相关**: [Jessica-Skills-real-test-database](https://github.com/j19-plusone/Jessica-Skills-real-test-database) — 姊妹库：工具实测点评 / Sister repo: hands-on tool reviews
+### Worked example / 手册使用示例（非可执行程序）
 
----
+**Scenario:** prepare a bilingual summary of a public article.
 
-## 中文
+1. Copy the 000 coordination, 005 governance and 009 writing/media role templates into your own workspace.
+2. Write a task card: public source URL; one accountable role; deliverable = EN + 简体中文 draft; acceptance = each factual claim traceable to source, no private data, no unsupported claims; define deadline, permission boundary and budget.
+3. Reuse the existing writing role. Do not register a new bot for one translation. Draft locally; publishing is a separate owner-approved action.
+4. Apply the governance and handoff checks; record acceptance or blockers. Archive only the approved public artefact; keep private task/operating records outside the public repo.
 
-### 为什么
-单个 Agent 技能很多，但"一支 Bot 团队怎么分工、不越界、不烧额度"没人讲。本仓库开源的是**方法、工作流、KPI 和验证结果**，不含任何具体事项或内部对话。
+This is a manual workflow example, **not an executable CLI demo**. / 此为人工使用规则的示例，不虚构自动执行能力。
 
-### 架构 / Architecture
+## Implemented vs planned / 已提供与待实现
 
-```
-┌──────────────────────────────────────────────┐
-│              Jessica (human)                  │
-│         decisions · approvals · strategy      │
-└──────────────────┬───────────────────────────┘
-                   │
-┌──────────────────▼───────────────────────────┐
-│     000 · Assistant 贴身助理                  │
-│   bot registry · routing · coordination      │
-└──────────────────┬───────────────────────────┘
-                   │
-     ┌─────────────┼─────────────┐
-     ▼             ▼             ▼
-┌──────────┐ ┌──────────┐ ┌──────────┐
-│ 001 幕僚长 │ │ 005 治理官 │ │ 010 邮件官 │
-│ business │ │ red lines│ │ Gmail/Cal│
-│ KPI roll │ │ risk     │ │          │
-└────┬─────┘ └──────────┘ └──────────┘
-     │
-┌────▼──────────────────────────────────────┐
-│ COO layer: 006 WDEO · 007 JJFit · 008 QCF │
-│ 013 龙 · 018 Wishcode · 019 基因工程        │
-└────┬──────────────────────────────────────┘
-     │
-┌────▼──────────────────────────────────────┐
-│ Specialists: 002 003 004 009 011 012 014   │
-│ 015 016 017                                 │
-└───────────────────────────────────────────┘
-```
+Status follows the evidence distinctions in V1.1 §08; a document, bot identity, web page and live service are different things.
 
-**基础设施 / Infrastructure**
-
-| 层 / Layer | 内容 / What | 位置 / Where |
+| Area | Available / implemented here | Planned or not evidenced here |
 |---|---|---|
-| 编排 / Orchestration | Rakazo 自托管 (Apache 2.0) | 私有仓 `rakazo-deploy` |
-| 模型 / Models | Grok (年费) + OpenAI (年费)，每 Bot 可切换 | 自带 key |
-| 代码与审计 / Code & audit | GitHub | 本仓公开 · 每 Bot 工作流仓私有 |
-| 数据 / Data | iCloud 2TB + Google Workspace 1TB | 每项目独立企业邮箱 |
+| Role definitions | 000–019 reusable definitions and boundaries | Live instance health and authorisations are not proven by templates |
+| Rulebook | V1.1 rules, lifecycle, reuse-first and acceptance gates; historical V1.0 | Runnable enforcement of every rule |
+| Website and media | Published project/documentation page and simulation media | Video is not a real-time console or deployment proof |
+| Experimental code | Development branch exists separately | Review/merge/package into canonical main; no runnable engine in this snapshot |
+| Business-driven autoscaling | Triggers, permission/budget gates and exit rules specified | Production autoscaling engine not launched in V1.1 evidence |
+| Unique-ID registry | IDs must not be reused; controlled manual registration described | Atomic concurrent registry service not deployed in V1.1 evidence |
+| Real-time workbench | Visual simulation | Live event integration not connected in V1.1 evidence |
+| Daily summary | Report fields and review workflow | Independent aggregate scheduled daily-report task not enabled in V1.1 evidence |
+| Sales pilots | Quality/privacy/acceptance criteria specified | No pilot operation or conversion results evidenced by V1.1 |
 
-每个 Bot 拥有独立的私有工作流仓库（`bot-000-assistant` 至 `bot-019-*`）。每个任务、每个产出、每个错误都带时间戳提交。出问题不猜 — `git log`。
+“Planned” is not a delivery promise. Real account details, schedules, scores and business results remain private. / 规划不等于承诺上线，内部经营证据不在开源仓库披露。
 
-### 20 个 Bot / The 20 bots
+## Role definitions / 岗位定义
 
-| ID | 角色 / Role | 一句话使命 / Mission |
-|---|---|---|
-| 000 | 贴身助理 / Assistant | Bot 名册、路由、日常协调 |
-| 001 | 幕僚长 / Chief of Staff | 商业模式、工作流、全项目 KPI 汇总 |
-| 002 | 日程官 / Scheduler | 分时段计划、周复盘、发帖节奏 |
-| 003 | 财务官 / CFO | 收支、发票、税务、月报 |
-| 004 | 资本官 / Capital Robot | 生物科学/能源/体育/教育/商务政治每日简报 |
-| 005 | 治理官 / Governance | 红线、权限边界、合规、风险 |
-| 006 | WDEO COO | 中瑞欧桥梁：教育、身份、资本、健康 |
-| 007 | JJFit COO | 个人健康数据 AGI — App、网站、SDK |
-| 008 | QCF COO | 量子文明基金会：能源/生命科学/文明大学 |
-| 009 | 脚本撰写 / Script Writer | 60–90 秒口播稿，选题到脚本流水线 |
-| 010 | 邮件管理员 / Email Admin | 7+ 企业邮箱、日历、零手动登录 |
-| 011 | 竞品监测 / Competitor Watch | 每日 5–8 条 AI/生物科技/机器人前沿简报 |
-| 012 | 全球旅行官 / Travel Officer | 高端定制旅行（职责待定） |
-| 013 | 龙 / Drago | 运动员数据平台 — Spot ID、Health ID 加密存储 |
-| 014 | 欧洲 Hack 官 / Euro Hack | 大赛运营、会议约时 |
-| 015 | 超算筹备 / Supercomputer | 量子文明超算中心 |
-| 016 | 股市情报 / Stock Intel | 市场情报监测 |
-| 017 | Mac 官 / Mac Officer | 本机操作、独立硬件 |
-| 018 | Wishcode 许愿码 | 娱乐预测站 — 八语种，首测免费 |
-| 019 | 基因工程 / Gene Project | 基因组合作档案、全球人类基因组倡议 |
+See [roles/](roles/) for 000–019 reusable definitions and boundaries. Definitions do not imply that an instance is online, authorised, or performing live work. Business-specific deployment evidence, account mappings, scores and schedules remain private.
 
-### 项目代号 / Project codenames
+## Good first contributions / 从这里参与
 
-公开层不暴露合作伙伴名称。内部用代号：
+Good-first tasks (link checks, translations, a static role map, task-card templates, simulation captions) will be published as GitHub Issues labelled `good first issue`. Discuss scope on the canonical repository, then fork and submit a focused PR under [CONTRIBUTING](CONTRIBUTING.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md).
 
-| 代号 / Codename | 是什么 / What | 技术栈 / Stack |
-|---|---|---|
-| **JJFit** | 个人健康数据 AGI — 健康数据智能体、可穿戴集成、SDK 直连 Apple Health & Android Health Connect（150+ 运动类型、睡眠、血氧） | TypeScript, HTML |
-| **龙 Dragon** | 运动员生涯数据平台 — 从 8 岁起的体能/恢复/成长追踪、位置适配、领导力评分。商业模式：机构年订阅授权查询 | 加密 Spot ID + Health ID |
-| **基因工程 Gene Project** | 全球人类基因组科研 — 完成 1998 年联合国测序工程未竟任务（中国贡献 3%）。重点：辐射区罕见病筛查、肿瘤药物人种匹配 | 基因组 + 多组学数据平台 |
-| **WDEO** | 中瑞欧桥梁：国际教育、身份移民、资本、健康 | 多站 SEO + 线索 |
-| **QCF** | 量子文明基金会 — 共建文明，守护生命。三大支柱：量子能源、生命科学、文明大学。20 CHF/月会员简报 | 基金会（筹备期，经 WDEO 执行） |
-| **Wishcode** | 娱乐预测站。首次免费；专项报告（事业/爱情/财富/家庭/教育）付费。8+ 语种 | 轻量、转化优先 |
-| **诺一曼 Neumann Tech** | 0→1 创业赋能 — 想法到执行策划到 BP 到产品到供应链到上线到结算到复盘 | 客户交付平台 |
+**⭐ [Star the canonical QCF88888 repository](https://github.com/QCF88888/Jessica-robot-army) to follow releases.** Do not split Stars across mirrors.
 
-### KPI 框架 / KPI framework
+## Project links / 统一入口
 
-每个 Bot 按五个维度评分（每项 1–5，满分 25）：
+- [Neumann Tech](https://neumanntech.space/)
+- [Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/)
+- [Robot Army workflow and demo](https://neumanntech.space/robot-army/)
+- LinkedIn — **link pending bot 009 approval / 链接待 009 媒体运营官确认**. No profile URL or post is assumed.
 
-1. **职责确认** — 岗位描述是否锁定
-2. **交付物** — 本周是否交付真实产出
-3. **卡点** — 是否卡住、原因
-4. **产出时效** — 上次产出时间
-5. **风险** — 越权、额度烧穿、安全标记
+[Governance](governance/) · [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md) · [MIT License](LICENSE)
 
-001 每周汇总，005 标记低于阈值项，000 路由修复。
+**Published / 发布时间：** 2026-11-05 23:30 CET · Europe/Zurich · [000]。Public scope: bot positions, duties and workflows only; concrete project work stays private. 公开范围：仅岗位、职责与工作流，具体项目工作不开源。
 
-### AI Scars 工具库 / AI Scars toolbox
-
-我们用生产环境实测开源工具。六周评分阶梯：
-
-| 天数 / Day | 关卡 / Gate |
-|---|---|
-| 7 | 冒烟测试 — 能安装运行？ |
-| 14 | 稳定性 — 48h 连续无崩溃？ |
-| 21 | 集成 — 能接入我们的栈？ |
-| 35 | 负载 — 扛得住真实流量？ |
-| 42 | 终审 / Verdict |
-
-**终审判定 / Verdict categories:**
-
-- ✅ **保留 / Keep** — 流畅可靠，值得维护
-- ⚠️ **不流畅建议删除 / Deprecate** — 能用但摩擦大于价值
-- 🚫 **禁用 / Banned** — 安全风险：凭证窃取、财务数据暴露、恶意行为
-
-工具清单与实时评分将随测试计划成熟逐步公开。能碰到你的 key、你的卡、你的健康数据的工具，先拿 🚫 再拿星。
-
-### Token 经济学 / Token economics
-
-目前靠付费年订阅（Grok + OpenAI）运转，尚无营收。005 治理官执行硬预算。高错误率任务暂停 → 拆成可验证微步骤 → 再恢复。零重复授权循环：一次批准、一次执行、全审计链。
-
-### 快速开始
-1. 复制 `roles/` 中需要的岗位模板，填入你的工具与时间。
-2. 先部署 000 总指挥 + 005 治理官，再按需加岗位。
-3. 启用 `governance/` 全部规则，用 `workflows/daily-report.md` 每天复盘。
-4. 按 `kpi/` 为每条赛道设一个北极星指标。
-
----
-
-## English
-
-**Why**: plenty of single-agent skills exist; few show how a *team* of bots splits work, respects boundaries and saves quota. This repo shares the **method, workflows, KPIs and validated results** — no specific matters or internal conversations.
-
-**Infrastructure**: Rakazo self-hosted orchestration · Grok + OpenAI annual keys (swappable per bot) · GitHub for code and audit trail (this repo public, per-bot workflow repos private) · iCloud 2TB + Google Workspace 1TB for data, per-project enterprise mailboxes.
-
-**KPI framework**: five dimensions scored 1–5 (25 max) — role confirmed, deliverables shipped, blockers, output recency, risk. 001 rolls up weekly, 005 flags below-threshold, 000 routes fixes.
-
-**AI Scars toolbox**: six-week ladder (days 7/14/21/35/42) → verdict: Keep / Deprecate / Banned. Any tool touching keys, cards, or health data earns 🚫 before it earns a star.
-
-**Token economics**: paid annual subscriptions, zero revenue yet. Hard budgets enforced by 005. High-error tasks paused, decomposed into verifiable micro-steps, resumed. Zero repeated-authorization loops.
-
-**Quick start**
-1. Copy the role templates you need from `roles/` and fill in your tools and schedule.
-2. Deploy 000 Chief Bot + 005 Governance first, then add roles.
-3. Enable every rule in `governance/`; review daily with `workflows/daily-report.md`.
-4. Set one north-star metric per track from `kpi/`.
-
-## Role map / 岗位图
-| # | Role | Track |
-|---|---|---|
-| 000 | Chief Bot / 总指挥 | Orchestrator |
-| 001 | Chief of Staff / 幕僚长 | Operations |
-| 002 | Calendar Officer / 日程官 | Operations |
-| 003 | Finance Officer / 财务官 | Finance (config guide only) |
-| 004 | Capital Ops / 资本运营官 | Capital & BD |
-| 005 | Governance Officer / 治理官 | Governance |
-| 006 | Track Bot – Immigration & Education Consulting | Immigration & Education consulting track |
-| 007 | Track Bot – Health-tech | Health-tech track |
-| 008 | Track Bot – Foundation/Nonprofit | Foundation/Nonprofit track |
-| 009 | Social Media Officer / 社媒官 | Media |
-| 010 | Email Officer / 邮件官 | Communications |
-| 011 | Intel Officer / 竞品监测 | Intelligence |
-| 012 | Travel Officer / 全球旅行官 | Travel |
-| 013 | Track Bot – Sports Project / 体育项目 Bot | Sports project track |
-| 014 | Track Bot – Hackathon & Events | Events track |
-| 015 | Track Bot – HPC Infrastructure | HPC infrastructure track |
-| 016 | Market Intel / 股市情报官 | Markets |
-| 017 | Device & Archive Officer / 设备与归档官 | Archive |
-| 018 | Track Bot – Consumer App | Consumer app track |
-| 019 | Track Bot – Biotech / Biotech 专项 Bot | Biotech track |
-
-## Results / 验证结果
-See [results/](results/README.md).
-
-## Contributing / 参与贡献
-欢迎 PR！见 [CONTRIBUTING.md](CONTRIBUTING.md)。Good first issues:
-- 为你的行业补一个岗位模板 / Add a role template for your industry
-- 翻译 README 为德语或其他语言 / Translate README
-- 分享你的 Bot 团队 KPI 数据（仅汇总）/ Share aggregate KPI results
-
-Roadmap: [ROADMAP.md](ROADMAP.md) · Ops log: [2026-11-01 open-source launch](ops-log/2026-11-01_open-source-launch.md)
-
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=j19-plusone/Jessica-robot-army&type=Date)](https://star-history.com/#j19-plusone/Jessica-robot-army&Date)
-
-## License
-MIT

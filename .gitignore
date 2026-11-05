@@ -1,0 +1,35 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+*.jks
+*credentials*.json
+*credentials*.yaml
+*credentials*.yml
+credentials/
+secrets/
+.secret*
+service-account*.json
+*serviceAccount*.json
+id_rsa*
+id_ed25519*
+# Private operational records (not a substitute for review)
+internal/
+private/
+customer-data/
+ledger.md
+ledger*.csv
+# Machine-local artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.firebase/
+.gitleaks-report*
+gitleaks*.json
