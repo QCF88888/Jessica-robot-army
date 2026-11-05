@@ -33,16 +33,16 @@
 ## 4. 官网发布短稿
 
 **中文｜服务订阅型 AI 销售顾问：从对话到订阅**  
-Neumann 参照 Zobi 的销售模型自建 AI 销售顾问，面向服务订阅而非电商。它在对话中引导预约与订阅；被拒后自我复盘、调整策略；按瑞士、欧盟、中国、美国等地区切换销售模式；把每位用户的消费喜好总结后写回系统留档；并能发现并更正自身错误。我们正在 WDEO、JJ FIT、Neumann Solo Founder、Wish code 四站实测，结果将随测试持续更新。全程遵守 GDPR、瑞士 nFADP 与 EU AI Act：明确告知您在与 AI 对话，不作误导性销售。外部案例数据为公司自报，未经我们审计。  
+Neumann 参照 Zobi 的销售模型自建 AI 销售顾问，面向服务订阅而非电商。它在对话中引导预约与订阅；被拒后自我复盘、调整策略；按瑞士、欧盟、中国、美国等地区切换销售模式；把每位用户的消费喜好总结后写回系统留档；并能发现并更正自身错误。我们将在 WDEO、JJ FIT、Neumann Solo Founder、Wish code 四站开展实测，结果将随测试持续更新。全程遵守 GDPR、瑞士 nFADP 与 EU AI Act：明确告知您在与 AI 对话，不作误导性销售。外部案例数据为公司自报，未经我们审计。  
 **行动：** 预约 30 分钟咨询｜浏览 SF LAB
 
 **English | A subscription AI sales advisor: from conversation to subscription**  
-Neumann is building its own AI sales advisor on Zobi's sales model, designed for service subscriptions, not e-commerce. It guides users to booking and subscribing; after a refusal it reviews its own strategy and adapts; it switches sales mode by region (Switzerland, EU, China, US); it summarises each user's preferences and writes them back to our system with a log; and it detects and corrects its own mistakes. Pilots are running on WDEO, JJ FIT, Neumann Solo Founder and Wish code, and results will be updated continuously as tests run. We follow GDPR, Swiss nFADP and the EU AI Act: users are always told they are talking to an AI, and no misleading sales claims are made. Third-party figures are company-reported and not audited by Neumann.  
+Neumann is building its own AI sales advisor on Zobi's sales model, designed for service subscriptions, not e-commerce. It guides users to booking and subscribing; after a refusal it reviews its own strategy and adapts; it switches sales mode by region (Switzerland, EU, China, US); it summarises each user's preferences and writes them back to our system with a log; and it detects and corrects its own mistakes. Pilots will run on WDEO, JJ FIT, Neumann Solo Founder and Wish code; results will be updated continuously as tests proceed. We follow GDPR, Swiss nFADP and the EU AI Act: users are always told they are talking to an AI, and no misleading sales claims are made. Third-party figures are company-reported and not audited by Neumann.  
 **CTA:** Book a 30-minute consult | Explore SF LAB
 
 ## 5. SF-006 卡片短标
-- 中：**SF-006 · AI 销售顾问（服务订阅）** — 引导订阅 · 复盘 · 分地区 · 偏好回传 · 自纠｜实测中，结果滚动更新
-- EN: **SF-006 · AI Sales Advisor (Subscriptions)** — guide · self-review · regional · preference write-back · self-correct | Pilot live, results updated continuously
+- 中：**SF-006 · AI 销售顾问（服务订阅）** — 引导订阅 · 复盘 · 分地区 · 偏好回传 · 自纠｜即将实测，结果滚动更新
+- EN: **SF-006 · AI Sales Advisor (Subscriptions)** — guide · self-review · regional · preference write-back · self-correct | Pilots starting soon; results updated continuously
 
 ## 6. 合规红线
 - GDPR + 瑞士 nFADP：偏好回传须有合法依据/同意、最小化、可删除、可导出；跨境（CN/US）单独评估。
