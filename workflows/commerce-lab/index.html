@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Commerce desk · Solo Founder Lab</title>
+<style>body{margin:0 auto;max-width:850px;padding:28px;background:#101723;color:#f1f1ec;font:16px/1.6 system-ui}a{color:#ebc786}label{display:grid}fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;border:1px solid #647282}input,button{font:inherit;padding:8px;max-width:100%;min-width:0}button{margin:12px 0}output{white-space:pre-line;display:block;color:#eed096}li{margin-bottom:10px}</style>
+<a href="https://neumanntech.space/sf-lab/">Solo Founder Lab</a><h1>Cross-border commerce desk<br>一人跨境电商工作台</h1>
+<p>Explore Bruce Jay’s published workflows and model one SKU locally. 公开工作流索引与单品经营测算。输入留在浏览器，使用同一币种、不含税。示例不连接店铺。</p>
+<h2>Workflow map / 经营流程</h2><ol>
+<li><b>Product research · 选品</b> 根据需求、竞品、供货成本和配送限制列出候选品。输出候选清单与淘汰理由。</li>
+<li><b>Listing & sales · 上架与销售</b> 将规格、搜索词与本地语言整理为详情页草稿。按 SKU 跟踪订单、退款和实收。</li>
+<li><b>Repricing · SKU 调价</b> 先算单品贡献底价，再比较竞品和当前售价。真实改价需平台写接口及价格回读。</li>
+<li><b>Advertising · 广告</b> 将关键词、订单归因与广告支出按 SKU 对齐，用可承担的单笔广告费判断是否调整投放。</li>
+<li><b>Stock & fulfilment · 库存与出库</b> 核对可售库存、待发数量、仓位和物流约束；单号、仓库回执和物流追踪用于确认实际发货。</li>
+<li><b>ERP & reconciliation · ERP 与复盘</b> 用订单行 ID 对齐 SKU、价格、库存预留、出库回执、退款与平台结算。公开材料未确认其自用 ERP 源码或仓库自动发货接口。</li></ol>
+<h2>SKU calculator / 单品测算</h2><p>单件采购及履约成本应含包装、运费和平均退货损耗。目标为贡献率，尚未扣固定开支。库存指尚未分配给本批订单的可用量。</p>
+<form id="desk"><fieldset><legend>One SKU / 一个商品</legend>
+<label>Price / 售价<input name="price" required type="number" min="0.01"  step="0.01" value="30"></label>
+<label>Unit costs / 单件总成本<input name="cost" required type="number" min="0"  step="0.01" value="15"></label>
+<label>Ads per order / 单笔广告费<input name="ad" required type="number" min="0"  step="0.01" value="3"></label>
+<label>Platform fee / 平台费率 %<input name="fee" required type="number" min="0" max="100" step="0.01" value="15"></label>
+<label>Target margin / 目标贡献率 %<input name="target" required type="number" min="0" max="100" step="0.01" value="20"></label>
+<label>Available units / 可用库存<input name="stock" required type="number" min="0"  step="1" value="12"></label>
+<label>Pending units / 待发件数<input name="orders" required type="number" min="0"  step="1" value="8"></label>
+</fieldset><button>Calculate / 生成测算</button></form><output id="result" aria-live="polite"></output>
+<h2>Source tools / 来源与接入</h2><ul>
+<li><a href="https://github.com/xjli360/sealeap-amazon-skills">SeaLeap Amazon Skills</a> · Amazon 选品、详情页、广告、库存与运营。MIT。</li>
+<li><a href="https://github.com/xjli360/sealeap-ecommerce-skills">SeaLeap eCommerce Skills</a> · Shopify、Etsy、eBay、TikTok Shop、Walmart、Mercado Libre、OZON、Wayfair。MIT。</li>
+<li><a href="https://github.com/xjli360/awesome-design-md-ecommerce">eCommerce Design Systems</a> · 品牌页面与商品页设计资料。</li>
+<li><a href="https://mcp.swanyo.com/">Swanyo MCP</a> · 数据与工具托管接入，按店铺分配权限。服务商账户及用量费用另计。</li>
+<li><a href="https://sealeap.cn/">SeaLeap 社区</a> · <a href="https://www.swanyo.com/bruce-jay.html">Bruce Jay / 作者</a> · <a href="https://github.com/QCF88888/Jessica-robot-army/tree/main/workflows/commerce-lab">Neumann demo source / 演示源码</a></li></ul>
+<script>
+function analyse({price,cost,ad,fee,target,stock,orders}){
+  const availableShare=1-(fee+target)/100;
+  return {
+    floor:availableShare>0?Math.ceil((cost+ad)*100/availableShare-1e-9)/100:null,
+    contribution:price*(1-fee/100)-cost-ad,
+    adLimit:price*availableShare-cost,
+    ready:Math.min(stock,orders), shortage:Math.max(0,orders-stock)
+  };
+}
+const form=document.getElementById('desk');
+function render(){
+  const values=Object.fromEntries(Array.from(new FormData(form),([key,value])=>[key,Number(value)]));
+  const r=analyse(values);
+  document.getElementById('result').textContent=[
+    'Target price floor / 目标底价  '+(r.floor===null?'Review fee and margin / 请调整费率与目标':r.floor.toFixed(2)),
+    'Unit contribution / 单件贡献  '+r.contribution.toFixed(2),
+    'Ad allowance per order / 单笔广告上限  '+(r.adLimit<0?'目标贡献未达标 / Target missed before ads':r.adLimit.toFixed(2)),
+    'Ready to fulfil / 可安排出库  '+r.ready+'    Shortfall / 缺货  '+r.shortage
+  ].join('\n');
+}
+form.addEventListener('submit',event=>{event.preventDefault();render()});
+render();
+</script></html>
