@@ -3,7 +3,7 @@
 <style>body{margin:0 auto;max-width:850px;padding:28px;background:#101723;color:#f1f1ec;font:16px/1.6 system-ui}a{color:#ebc786}label{display:grid}fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;border:1px solid #647282}input,button{font:inherit;padding:8px;max-width:100%;min-width:0}button{margin:12px 0}output{white-space:pre-line;display:block;color:#eed096}li{margin-bottom:10px}details{padding:14px 0;border-bottom:1px solid #647282}summary{cursor:pointer;font-weight:650}details form{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}details output{margin-top:8px}</style>
 <a href="https://neumanntech.space/sf-lab/">Solo Founder Lab</a><h1>Cross-border commerce desk<br>一人跨境电商工作台</h1>
 <p>Explore Bruce Jay’s published workflows and model one SKU locally. 公开工作流索引与单品经营测算。输入留在浏览器，使用同一币种、不含税。示例不连接店铺。</p>
-<section id="pilot"><h2>JJ FIT · 跨岗位工作流</h2><p>本地试跑记录。MM 是工作台入口，000 汇总日报。广告与订单可并行推进。真实店铺与仓库待接入。仅填写去标识化的测试单号。</p><label>试跑批次 / Pilot ID <input id="batch" value="JJFIT-pilot-01" maxlength="64"></label><button id="openBatch" type="button">打开批次 / Open</button><p id="summary" aria-live="polite"></p><div id="tasks"></div><button id="exportReport" type="button">导出协作记录 / Export JSON</button></section><h2>Workflow map / 经营流程</h2><ol>
+<section id="pilot"><p><a href="https://jjfit.tech/pilot/">JJFIT pilot 20261106 · 健康平台、Demo 与加盟申请 ↗</a></p><h2>JJ FIT · 跨岗位工作流</h2><p>本地试跑记录。MM 是工作台入口，000 汇总日报。广告与订单可并行推进。真实店铺与仓库待接入。仅填写去标识化的测试单号。</p><label>试跑批次 / Pilot ID <input id="batch" value="JJFIT pilot 20261106" maxlength="64"></label><button id="openBatch" type="button">打开批次 / Open</button><p id="summary" aria-live="polite"></p><div id="tasks"></div><button id="exportReport" type="button">导出协作记录 / Export JSON</button></section><h2>Workflow map / 经营流程</h2><ol>
 <li><b>Product research · 选品</b> 根据需求、竞品、供货成本和配送限制列出候选品。输出候选清单与淘汰理由。</li>
 <li><b>Listing & sales · 上架与销售</b> 将规格、搜索词与本地语言整理为详情页草稿。按 SKU 跟踪订单、退款和实收。</li>
 <li><b>Repricing · SKU 调价</b> 先算单品贡献底价，再比较竞品和当前售价。真实改价需平台写接口及价格回读。</li>
@@ -57,7 +57,7 @@ let batch,state;
 function storageKey(){return 'neumann.commerce.v1.'+batch;}
 function loadBatch(){
  const input=document.getElementById('batch');
- batch=input.value.trim()||'JJFIT-pilot-01'; input.value=batch;
+ batch=input.value.trim()||'JJFIT pilot 20261106'; input.value=batch;
  try{state=JSON.parse(localStorage.getItem(storageKey())||'{}')||{};}catch{state={};}
  draw();
 }
