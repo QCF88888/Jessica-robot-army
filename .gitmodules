@@ -1,0 +1,10 @@
+
+[submodule "sealeap-amazon-skills"]
+	path = workflows/commerce-lab/upstream/sealeap-amazon-skills
+	url = https://github.com/xjli360/sealeap-amazon-skills.git
+[submodule "sealeap-ecommerce-skills"]
+	path = workflows/commerce-lab/upstream/sealeap-ecommerce-skills
+	url = https://github.com/xjli360/sealeap-ecommerce-skills.git
+[submodule "awesome-design-md-ecommerce"]
+	path = workflows/commerce-lab/upstream/awesome-design-md-ecommerce
+	url = https://github.com/xjli360/awesome-design-md-ecommerce.git

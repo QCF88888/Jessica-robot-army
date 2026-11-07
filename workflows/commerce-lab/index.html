@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Commerce desk · Solo Founder Lab</title>
-<style>body{margin:0 auto;max-width:850px;padding:28px;background:#101723;color:#f1f1ec;font:16px/1.6 system-ui}a{color:#ebc786}label{display:grid}fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;border:1px solid #647282}input,button{font:inherit;padding:8px;max-width:100%;min-width:0}button{margin:12px 0}output{white-space:pre-line;display:block;color:#eed096}li{margin-bottom:10px}</style>
+<style>body{margin:0 auto;max-width:850px;padding:28px;background:#101723;color:#f1f1ec;font:16px/1.6 system-ui}a{color:#ebc786}label{display:grid}fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;border:1px solid #647282}input,button{font:inherit;padding:8px;max-width:100%;min-width:0}button{margin:12px 0}output{white-space:pre-line;display:block;color:#eed096}li{margin-bottom:10px}details{padding:14px 0;border-bottom:1px solid #647282}summary{cursor:pointer;font-weight:650}details form{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px}details output{margin-top:8px}</style>
 <a href="https://neumanntech.space/sf-lab/">Solo Founder Lab</a><h1>Cross-border commerce desk<br>一人跨境电商工作台</h1>
 <p>Explore Bruce Jay’s published workflows and model one SKU locally. 公开工作流索引与单品经营测算。输入留在浏览器，使用同一币种、不含税。示例不连接店铺。</p>
-<h2>Workflow map / 经营流程</h2><ol>
+<section id="pilot"><h2>JJ FIT · 跨岗位工作流</h2><p>本地试跑记录。MM 是工作台入口，000 汇总日报。广告与订单可并行推进。真实店铺与仓库待接入。仅填写去标识化的测试单号。</p><label>试跑批次 / Pilot ID <input id="batch" value="JJFIT-pilot-01" maxlength="64"></label><button id="openBatch" type="button">打开批次 / Open</button><p id="summary" aria-live="polite"></p><div id="tasks"></div><button id="exportReport" type="button">导出协作记录 / Export JSON</button></section><h2>Workflow map / 经营流程</h2><ol>
 <li><b>Product research · 选品</b> 根据需求、竞品、供货成本和配送限制列出候选品。输出候选清单与淘汰理由。</li>
 <li><b>Listing & sales · 上架与销售</b> 将规格、搜索词与本地语言整理为详情页草稿。按 SKU 跟踪订单、退款和实收。</li>
 <li><b>Repricing · SKU 调价</b> 先算单品贡献底价，再比较竞品和当前售价。真实改价需平台写接口及价格回读。</li>
@@ -49,4 +49,38 @@ function render(){
 }
 form.addEventListener('submit',event=>{event.preventDefault();render()});
 render();
+
+const stages=[["research","选品 / Research","011 竞品监测 → 007 健康科技、003 财务","候选 SKU、需求样本、报价 → 选品单","样本达标率","符合预设条件的样本","有效样本",[]],["catalog","商品建档 / Catalogue","007 健康科技、018 消费应用 → 005 治理","选品单 → SKU 主档、规格、商品页版本","字段完整率","已核验必填字段","全部必填字段",["research"]],["price","SKU 调价 / Pricing","003 财务 → 005 治理","SKU 主档、到岸成本、费率 → 价格变更单与回读","达标 SKU 比例","达到目标贡献率的 SKU","核算 SKU",["catalog"]],["ads","广告 / Advertising","009 媒体运营 ↔ 003 财务","商品页、预算上限 → 广告计划与归因报表","广告销售成本率 ACOS","归因广告支出","归因销售额",["price"]],["orders","销售 / Orders","018 消费应用 → 003 财务、002 调度","已核价 SKU、渠道订单 → 订单行与库存预留","订单匹配率","已匹配 SKU 的订单行","全部订单行",["price"]],["ship","仓储出库 / Dispatch","002 调度 → 仓库操作员 → 001 幕僚长","库存预留 → 拣货单、出库回执与追踪号","按时出库率","按截止时间出库的订单","应出库订单",["orders"]],["close","复盘 / Reconciliation","003 财务、001 幕僚长 → 000 总指挥官","订单、退款、出库、广告账单 → 差异清单与日报","结算匹配率","已匹配结算行","全部结算行",["ads","ship"]]];
+const taskBox=document.getElementById('tasks');
+const summary=document.getElementById('summary');
+let batch,state;
+function storageKey(){return 'neumann.commerce.v1.'+batch;}
+function loadBatch(){
+ const input=document.getElementById('batch');
+ batch=input.value.trim()||'JJFIT-pilot-01'; input.value=batch;
+ try{state=JSON.parse(localStorage.getItem(storageKey())||'{}')||{};}catch{state={};}
+ draw();
+}
+function draw(){
+ taskBox.replaceChildren();
+ let total=0;
+ for(const [id,title,roles,docs,kpi,nlabel,dlabel,deps] of stages){
+  const row=state[id]||{}, done=!!row.done, blocked=deps.some(key=>!state[key]?.done);
+  if(done)total++;
+  const el=document.createElement('details');el.open=!done&&!blocked;
+  el.innerHTML='<summary></summary><p></p><p></p><form><label>ERP 回执或测试凭证编号<input required maxlength="120"></label><label></label><label></label><button>确认交接 / Complete</button></form><output></output>';
+  el.querySelector('summary').textContent=title+' · '+(done?'已交接':blocked?'等待上游':'可执行');
+  const ps=el.querySelectorAll('p');ps[0].textContent=roles;ps[1].textContent=docs+' ｜ 前置：'+(deps.map(key=>stages.find(s=>s[0]===key)[1]).join(' + ')||'无');
+  const form=el.querySelector('form'),labels=form.querySelectorAll('label'),ref=form.querySelector('input');ref.value=row.ref||'';
+  const nums=[nlabel,dlabel].map((name,i)=>{labels[i+1].textContent=name;const input=document.createElement('input');input.type='number';input.step='any';input.min=i?'0.000001':'0';input.required=true;input.value=(i?row.d:row.n)??'';labels[i+1].append(input);return input;});
+  for(const field of form.elements) field.disabled=done||blocked;
+  const output=el.querySelector('output');output.textContent=kpi+' · '+(done?(100*row.n/row.d).toFixed(1)+'%':'待测');
+  form.onsubmit=e=>{e.preventDefault();const n=nums[0].valueAsNumber,d=nums[1].valueAsNumber;if(!ref.value.trim()||!(d>0)||!(n>=0)||(id!=='ads'&&n>d)){output.textContent='请核对凭证与指标分子、分母。';return;}const next={...state,[id]:{done:true,ref:ref.value.trim(),n,d,time:new Date().toISOString()}};try{localStorage.setItem(storageKey(),JSON.stringify(next));}catch{output.textContent='浏览器未能保存，请检查本地存储。';return;}state=next;draw();};
+  taskBox.append(el);
+ }
+ summary.textContent=batch+' · '+total+'/'+stages.length+' 已交接 · '+(total===0?'待实测':total===stages.length?'已完成记录':'进行中');
+}
+document.getElementById('openBatch').onclick=loadBatch;
+document.getElementById('exportReport').onclick=()=>{const data={batch,source:'operator-entered local pilot',stages:stages.map(([id,title,roles,documents,kpi,numerator,denominator,dependencies])=>({id,title,roles,documents,kpi,numerator,denominator,dependencies,record:state[id]||null}))};const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='commerce-pilot.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+loadBatch();
 </script></html>
