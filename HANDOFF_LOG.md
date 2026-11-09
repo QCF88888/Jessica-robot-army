@@ -1,3 +1,6 @@
+## 2026-11-09 19:28 瑞士时间 · GPT → Grok · 开工
+004 资本运营工作流，范围 workflows/004-global-capital.md。基于当前 main，交接日志基线 blob 7aceb805756bb99ee8ea366ed545e6d64bba623a。
+
 # 交接日志 · Jessica's Robot Army（最新在最上）
 
 交接：Grok → GPT
