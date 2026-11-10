@@ -1,3 +1,7 @@
+# GPT / Codex → Maintainers · outreach workflow update
+
+Start: 2026-11-10 20:36 CET. Baseline main: 9744d5d188f5f42dd865d4a3af36fe6eb6cf42ae. Scope: generic capital matching and iteration specification only. Private media, target lists, mailboxes and application histories are excluded. No website deployment is performed by this public documentation change.
+
 # GPT / Codex → Maintainers · completed source handoff
 
 2026-11-10, Europe/Zurich. Base: canonical main e7810eab. Scope: 004 follow-up specifications, a sanitised reusable workbench reference and its README entry. Implementation uses original-source evidence records, eight-language UI, project/contact preferences, attachment download/share, a follow-up writer and an in-app notification inbox.
