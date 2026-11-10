@@ -1,0 +1,2 @@
+export type RecordItem={id:string,title:string,status:string,source:string,detail:string,url?:string,date?:string,owner?:string,nextAction?:string,nextCheck?:string,checkedAt?:string,email?:string,channel?:string};
+export const seed:Record<string,RecordItem[]>={"timeline": [], "materials": [], "evidence": [], "product": [], "engineering": [], "lab": [], "actions": [], "approvals": [], "checks": [], "history": []};

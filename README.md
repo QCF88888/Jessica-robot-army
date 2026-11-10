@@ -9,6 +9,10 @@
 
 An independent open-source project within **[Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/)**, not a claim that an autonomous production platform is already shipped.
 
+## Capital evidence workbench · 开源参考代码
+
+[Explore the reusable workbench source](workflows/capital-evidence-workbench/README.md): eight-language UI, versioned evidence, attachment downloads, project/avatar settings and follow-up timeline. This is a private-host reference, not a live bot engine or connected mailbox. Personal data and real application files are excluded. ⭐ Star this canonical repository and contribute tested integrations.
+
 ## Watch the workflow / 工作流演示
 
 [![Play the Robot Army workflow simulation](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105_poster.jpg)](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105.mp4)
