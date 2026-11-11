@@ -2,7 +2,7 @@
 
 Jessica's Robot Army · JRA
 
-**Last updated / 最后更新：2026-11-11 17:55 CET · Europe/Zurich（苏黎世时间）**
+**Last updated / 最后更新：2026-11-11 17:56 CET · Europe/Zurich（苏黎世时间）**
 
 ## Our spirit / 军团的灵魂
 
@@ -112,8 +112,8 @@ Support QCF's institutional development, cooperation research and public-facing 
 围绕量子能源、生命科学与教育，支持 QCF 的机构发展、合作研究及对外品牌内容。
 
 **Symbol / 象征**  
-Marie Curie as archetype: rigorous science devoted to humanity, the spirit behind QCF's quantum-energy, life-science and education work.  
-居里夫人为原型：严谨献身的科学精神造福人类，引领 QCF 的量子能源、生命科学与教育事业。
+Dual archetype of Marie Curie and Albert Einstein: Curie's rigorous science devoted to humanity, joined with Einstein's imagination of the universe, guiding QCF's quantum-energy, life-science and education work toward a quantum civilization.  
+居里夫人 + 爱因斯坦双人格为原型：居里夫人严谨献身、造福人类的科学精神，加上爱因斯坦对宇宙的想象力，引领 QCF 的量子能源、生命科学与教育事业走向量子文明。
 
 ## 009 · Social Media Officer / 社媒官
 
