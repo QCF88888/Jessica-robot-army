@@ -17,6 +17,10 @@ An independent open-source project within **[Neumann Solo Founder Lab](https://n
 
 [Explore the reusable workbench source](workflows/capital-evidence-workbench/README.md): eight-language UI, versioned evidence, attachment downloads, project/avatar settings and follow-up timeline. This is a private-host reference, not a live bot engine or connected mailbox. Personal data and real application files are excluded. ⭐ Star this canonical repository and contribute tested integrations.
 
+## Neumann Solo Founder Workbench · 规则手册
+
+[Neumann Workbench Rulebook V1.0](workbench/Neumann_Workbench_Rulebook_V1.0_20261111.md) — 工作台由 000 总指挥官调度、005 治理官执法；实时状态只使用红 / 绿 / 蓝 / 紫四色。本文件是公开治理规则，不含经营数据。 / Commanded by 000, governed by 005; status colours are red / green / blue / purple only. Public governance rules; no operating data.
+
 ## Watch the workflow / 工作流演示
 
 [![Play the Robot Army workflow simulation](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105_poster.jpg)](workflows/video/Jessicas_Robot_Army_Workflow_Demo_V1.0_20261105.mp4)
@@ -98,7 +102,7 @@ Jessica’s Robot Army 是 [Neumann Solo Founder Lab](https://neumanntech.space/
 - **主仓库：** QCF88888/Jessica-robot-army，`main` 为唯一事实源；j19-plusone/Jessica-robot-army 从主仓同步，只作开发同步镜像，不作宣传入口，Star 与贡献统一引导至 QCF88888。
 - **公开范围：** 代码、岗位定义、工作流规则、演示。当前 main 快照以文档和媒体为主，开发分支的实验代码不视为已合并或已投产。
 - **严禁进入公开仓库：** 密钥、账户凭证、客户资料、个人档案、内部经营与财务数据、合作条款和未经批准的协议；Issue、PR、截图、PDF、视频也适用。敏感材料只存受控私库或凭证库。
-- **网站：** https://neumanntech.space/robot-army/；[V1.1 手册](workflows/Jessicas_Robot_Army_Workflows_Rulebook_V1.1_20261105.md) 为公开脱敏版，非内部运行台账。**所有演示均为模拟，不是实时生产数据**；历史水印不作为现行版本或岗位依据。
+- **网站：** https://neumanntech.space/robot-army/；[V1.1 手册](workflows/Jessicas_Robot_Army_Workflows_Rulebook_V1.1_20261105.md) 为公开脱敏版，非内部运行台账。[工作台规则手册 V1.0](workbench/Neumann_Workbench_Rulebook_V1.0_20261111.md) 为 Neumann Solo Founder Workbench 的公开治理规则。**所有演示均为模拟，不是实时生产数据**；历史水印不作为现行版本或岗位依据。
 - **参与共建：** Fork 主仓库 → 独立分支 → PR 到主仓 `main`；非敏感建议可提 Issue。遵守贡献指南与行为准则，安全问题按 SECURITY 私下报告。
 
 ## Install / quick start — use the rulebook, not an invented runtime
@@ -164,6 +168,7 @@ Good-first tasks (link checks, translations, a static role map, task-card templa
 - [Neumann Tech](https://neumanntech.space/)
 - [Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/)
 - [Robot Army workflow and demo](https://neumanntech.space/robot-army/)
+- [Neumann Solo Founder Workbench rulebook / 工作台规则手册 V1.0](workbench/Neumann_Workbench_Rulebook_V1.0_20261111.md)
 - LinkedIn — **link pending bot 009 approval / 链接待 009 媒体运营官确认**. No profile URL or post is assumed.
 
 [Governance](governance/) · [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md) · [MIT License](LICENSE)
