@@ -21,7 +21,7 @@ An independent open-source project within **[Neumann Solo Founder Lab](https://n
 
 **Simulation, not live production. / 系统行为模拟，非生产实时数据。** Historical video roles and watermarks are illustrative; current public rules take precedence.
 
-## Bot role map · 000–019 / 岗位图
+## Bot role map · 000–020 / 岗位图
 
 ```mermaid
 flowchart TB
@@ -45,6 +45,7 @@ flowchart TB
   B017["017 Device and Archive / 设备与归档"]
   B018["018 Track · Consumer App / 消费应用赛道"]
   B019["019 Track · Biotech / 生物科技赛道"]
+  B020["020 Track · Solo Founder Lab / Solo Founder 项目赛道"]
   B000 --> B001
   B000 --> B002
   B000 --> B003
@@ -64,6 +65,7 @@ flowchart TB
   B000 --> B017
   B000 --> B018
   B000 --> B019
+  B000 --> B020
   B005 -. "permission and budget gates" .-> B000
 ```
 
@@ -131,7 +133,7 @@ Status follows the evidence distinctions in V1.1 §08; a document, bot identity,
 
 | Area | Available / implemented here | Planned or not evidenced here |
 |---|---|---|
-| Role definitions | 000–019 reusable definitions and boundaries | Live instance health and authorisations are not proven by templates |
+| Role definitions | 000–020 reusable definitions and boundaries | Live instance health and authorisations are not proven by templates |
 | Rulebook | V1.1 rules, lifecycle, reuse-first and acceptance gates; historical V1.0 | Runnable enforcement of every rule |
 | Website and media | Published project/documentation page and simulation media | Video is not a real-time console or deployment proof |
 | Experimental code | Development branch exists separately | Review/merge/package into canonical main; no runnable engine in this snapshot |
@@ -145,7 +147,7 @@ Status follows the evidence distinctions in V1.1 §08; a document, bot identity,
 
 ## Role definitions / 岗位定义
 
-See [roles/](roles/) for 000–019 reusable definitions and boundaries. Definitions do not imply that an instance is online, authorised, or performing live work. Business-specific deployment evidence, account mappings, scores and schedules remain private.
+See [roles/](roles/) for 000–020 reusable definitions and boundaries. Definitions do not imply that an instance is online, authorised, or performing live work. Business-specific deployment evidence, account mappings, scores and schedules remain private.
 
 ## Good first contributions / 从这里参与
 
