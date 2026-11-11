@@ -9,6 +9,8 @@
 
 An independent open-source project within **[Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/)**, not a claim that an autonomous production platform is already shipped.
 
+> 🫶 **[JRA · Missions & Symbols / 使命与象征](MISSIONS.md)** — every bot has a mission and a symbol; no founder has to be alone. 每个 Bot 都有使命与象征，让所有创业者不必孤单。
+
 ## Capital evidence workbench · 开源参考代码
 
 [Explore the reusable workbench source](workflows/capital-evidence-workbench/README.md): eight-language UI, versioned evidence, attachment downloads, project/avatar settings and follow-up timeline. This is a private-host reference, not a live bot engine or connected mailbox. Personal data and real application files are excluded. ⭐ Star this canonical repository and contribute tested integrations.
