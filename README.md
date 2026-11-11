@@ -40,7 +40,7 @@ flowchart TB
   B012["012 Travel Services / 全球旅行官"]
   B013["013 Track · Sports / 体育赛道"]
   B014["014 Track · Hackathon & Events / 赛事活动赛道"]
-  B015["015 Track · HPC Infrastructure / 算力基础设施赛道"]
+  B015["015 Track · QSC Supercomputing / QSC 超算中心赛道"]
   B016["016 Global Market Intelligence / 全球股市情报"]
   B017["017 Device and Archive / 设备与归档"]
   B018["018 Track · Consumer App / 消费应用赛道"]
