@@ -2,7 +2,7 @@
 
 Jessica's Robot Army · JRA
 
-**Last updated / 最后更新：2026-11-11 16:37 CET · Europe/Zurich（苏黎世时间）**
+**Last updated / 最后更新：2026-11-11 17:45 CET · Europe/Zurich（苏黎世时间）**
 
 ## Our spirit / 军团的灵魂
 
@@ -24,7 +24,8 @@ Receive Jessica's tasks, route them to the appropriate bots, and maintain the te
 接收 Jessica 的任务并分派给合适的 Bot，维护岗位与部署登记；统筹军团协作，不替代专岗职责。
 
 **Symbol / 象征**  
-象征待定 / Symbol to be defined
+Elon Musk as archetype: first principles, foresight and a future on the road to the cosmos, like SpaceX.  
+马斯克为原型：第一性原理、预判能力，带领军团走向像 SpaceX 一样通往宇宙的未来。
 
 ## 001 · Chief of Staff / 幕僚长
 
