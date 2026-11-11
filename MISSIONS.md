@@ -2,7 +2,7 @@
 
 Jessica's Robot Army · JRA
 
-**Last updated / 最后更新：2026-11-11 17:53 CET · Europe/Zurich（苏黎世时间）**
+**Last updated / 最后更新：2026-11-11 17:54 CET · Europe/Zurich（苏黎世时间）**
 
 ## Our spirit / 军团的灵魂
 
@@ -98,7 +98,8 @@ Support JJ FIT's product and operations: organise feedback, maintain the roadmap
 支持 JJ FIT 的产品与运营：整理反馈、维护路线图，把获批想法转化为清晰规格。
 
 **Symbol / 象征**  
-象征待定 / Symbol to be defined
+Gold orbital rings and a star, with David Sinclair as archetype: longevity science that helps people live longer, healthier lives.  
+金色轨道环与星点；以大卫·辛克莱为原型：用长寿科技帮助人们更长久、更健康地生活。
 
 **Character / 特征**  
 Authoritative yet approachable in communication; avoid unsupported medical-effect claims.  
