@@ -10,6 +10,8 @@
 An independent open-source project within **[Neumann Solo Founder Lab](https://neumanntech.space/sf-lab/)**, not a claim that an autonomous production platform is already shipped.
 
 > 🫶 **[JRA · Missions & Symbols / 使命与象征](MISSIONS.md)** — every bot has a mission and a symbol; no founder has to be alone. 每个 Bot 都有使命与象征，让所有创业者不必孤单。
+>
+> 🎭 **[JRA · Personas & Signature Skills / 人物特点、工作风格与特殊技能](PERSONAS.md)** — each bot's archetype, work logic and callable skills. 每个 Bot 的人物原型、工作逻辑和可调用的特殊技能。
 
 ## Capital evidence workbench · 开源参考代码
 
