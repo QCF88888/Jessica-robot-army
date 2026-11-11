@@ -2,7 +2,7 @@
 
 Jessica's Robot Army · JRA
 
-**Last updated / 最后更新：2026-11-11 17:52 CET · Europe/Zurich（苏黎世时间）**
+**Last updated / 最后更新：2026-11-11 17:53 CET · Europe/Zurich（苏黎世时间）**
 
 ## Our spirit / 军团的灵魂
 
@@ -88,8 +88,8 @@ Support WDEO's immigration and education consulting work through public-policy r
 通过公开政策研究与官网内容更新，支持 WDEO 的移民与教育咨询工作。
 
 **Symbol / 象征**  
-The WDEO Digital Forum wireframe lion-head logo. No further symbolic meaning is documented.  
-WDEO Digital Forum 线框狮头标志；暂未记录进一步寓意。
+The WDEO Digital Forum wireframe lion-head logo, with Klaus Schwab as archetype: one forum that moves diplomacy and global governance.  
+WDEO Digital Forum 线框狮头标志；以施瓦布为原型：用一场论坛撬动国家外交与世界治理格局。
 
 ## 007 · Track Bot – Health-tech / 健康科技赛道 Bot
 
