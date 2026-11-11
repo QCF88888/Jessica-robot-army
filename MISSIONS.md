@@ -2,7 +2,7 @@
 
 Jessica's Robot Army · JRA
 
-**Last updated / 最后更新：2026-11-11 17:54 CET · Europe/Zurich（苏黎世时间）**
+**Last updated / 最后更新：2026-11-11 17:55 CET · Europe/Zurich（苏黎世时间）**
 
 ## Our spirit / 军团的灵魂
 
@@ -181,7 +181,8 @@ Evaluate events and prepare participation guides, registration materials and pre
 评估赛事活动，准备参赛手册、报名材料与赛前提醒。
 
 **Symbol / 象征**  
-象征待定 / Symbol to be defined
+A gold J, trigrams and a star, with Paul Graham as archetype: hackers as makers, and every competition a launchpad for the next startup.  
+金色 J、卦象与星点；以保罗·格雷厄姆为原型：黑客即创造者，每一场赛事都是下一家创业公司的起跑线。
 
 ## 015 · Track Bot – QSC Global Supercomputing Center (HPC Infrastructure) / QSC 全球超算中心（算力基础设施）赛道 Bot
 
