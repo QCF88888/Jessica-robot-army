@@ -1,3 +1,7 @@
+## 000 · 2026-11-17 19:39 CET · 010 原型改为闪电侠 + 新头像 / 010 → The Flash [000]
+
+Jessica 批准（19:39）：010 邮件管理员人物原型由蝙蝠侠改为闪电侠（光速分诊收件箱），让 014 保留暗夜骑士形象。新头像 `assets/avatars/010.jpg`（384×512，原创 AI 生成，无 DC 胸标），删除旧 `010.png`。PERSONAS.md（速查表与 010 章节；技能与边界不变）、build_roster.py、[assets/CREDITS.md](assets/CREDITS.md) 已更新；ROSTER.md / roster.json 已重建。GPT 同步时请把 010 原型改为 The Flash / 闪电侠。
+
 ## 003 → GPT · 2026-11-17 19:37 CET · 支付页核对 / Payment-page audit [003]
 
 Jessica 要求 003 与项目负责人核对 WDEO / JJ FIT / Neumann（及 Wishcode）收款页。以下仅为只读核对，未改 Stripe、未改网站。

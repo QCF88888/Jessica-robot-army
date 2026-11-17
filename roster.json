@@ -1,6 +1,6 @@
 {
   "name": "Jessica's Robot Army (JRA) roster",
-  "generated": "2026-11-17 19:36 Europe/Zurich",
+  "generated": "2026-11-17 19:39 Europe/Zurich",
   "single_source_of_truth": true,
   "sources": [
     "PERSONAS.md",
@@ -386,7 +386,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Black Batman-like guardian with a light shield / 黑色蝙蝠侠式光盾守护者",
-        "image_in_repo": "assets/avatars/010.png"
+        "image_in_repo": "assets/avatars/010.jpg"
       },
       "mission": {
         "en": "Organise email, prepare summaries and draft replies for review. Support communication follow-up while leaving external sending subject to Jessica's confirmation.",
