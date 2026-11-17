@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {strategy,issueDailyInstructions} from '../strategy.mjs';import {Store,dayKey} from '../store.mjs';
+test('no automatic routing without quality evidence',()=>assert.equal(strategy({}).validated_route,null));
+test('cheap but quality-failing candidates are excluded',()=>{const r=strategy({},[{system:'rental',quality:.5,latency_ms:10,privacy_approved:true},{system:'api',quality:.99,latency_ms:900,privacy_approved:true}]);assert.equal(r.validated_route,'api');});
+test('daily 000 instructions issued once per bot, acknowledged by worker later',()=>{const s=new Store(':memory:');assert.equal(issueDailyInstructions(s,'2026-11-17').filter(Boolean).length,21);assert.equal(issueDailyInstructions(s,'2026-11-17').filter(Boolean).length,0);s.close();});
+test('Swiss day boundary respects daylight saving',()=>{assert.equal(dayKey(Date.parse('2026-07-01T22:30:00Z')),'2026-07-02');assert.equal(dayKey(Date.parse('2026-11-17T23:30:00Z')),'2026-11-18');});

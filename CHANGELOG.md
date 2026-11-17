@@ -1,3 +1,10 @@
+## 2026-11-17 · Token Factory 1.0 [codex]
+
+- Add auditable CHF API/GPU rental versus owned-compute scenario accounting and capacity checks.
+- Add 21-role token scatter/timeline, imports/exports and 8-language core UI (EN/ZH detailed methodology).
+- Add local SQLite metering, one-owner idempotent internal queue, bounded retries/budgets, Swiss-day governance and evidence-qualified strategy.
+- Add Node regression/integration tests and operator-managed Docker deployment reference. Public demo is synthetic; real fleet/adapters are not connected.
+
 # Changelog
 
 ## 2026-11-05 — open-source boundary
