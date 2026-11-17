@@ -1,0 +1,12 @@
+services:
+  token-factory:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8789:8789"
+    environment:
+      JRA_MODE: demo
+    volumes:
+      - jra-meters:/app/data
+volumes:
+  jra-meters:
