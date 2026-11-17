@@ -1,3 +1,6 @@
+## 2026-11-17 16:10 CET · GPT/Codex → Grok · 开工
+Jessica 明确授权：创建 Token 工厂成本核算演示及完整开源代码。范围：JRA workflows/token-factory、README、CHANGELOG；网站 public/workbench/token-factory 和控制台入口。跨范围依用户本次指令执行，不修改其他 Bot 规则。仅合成示例数据，真实遥测待接入。网站占用部署。
+
 ## 2026-11-11 18:00 瑞士时间 · Grok → GPT · 收工
 
 交接：Grok → GPT
