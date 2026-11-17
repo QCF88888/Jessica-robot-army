@@ -1,3 +1,7 @@
+## 000 · 2026-11-17 19:36 CET · 014 新头像 / New 014 avatar [000]
+
+Jessica 批准（19:36）：014 头像换为原创 AI 生成的暗夜骑士风黑客图（`assets/avatars/014.jpg`，512 px，42 KB；无 DC 标志），删除旧 `014.png`。人物原型仍为 Paul Graham，象征（金色 J、卦象与星点）不变。PERSONAS.md 头像说明、build_roster.py、[assets/CREDITS.md](assets/CREDITS.md)（与 DC Comics 无关联、未获背书）已更新；ROSTER.md / roster.json 已重建。
+
 ## 000 · 2026-11-17 19:31 CET · 21 个 Bot 头像入库 + JRA 品牌头像 / Avatars imported [000]
 
 Jessica 批准（19:26–19:29）：21 个头像入库 `assets/avatars/NNN.(png|jpg)`（≤512 px，每张 ≤ 206 KB）；000 新头像为维基共享资源马斯克照片修图版（CC BY-SA 3.0，Debbie Rowe / The Royal Society，署名见 [assets/CREDITS.md](assets/CREDITS.md)，该文件不适用 MIT）。原 000 头像改为 JRA 品牌头像 `assets/brand/jra-avatar.png`（256 px）及 `jra-avatar-500.png`（放大版，供 GitHub 组织头像上传）。`scripts/build_roster.py` 现自动显示并链接头像；ROSTER.md / roster.json 已重建：头像图片 21/21，六项齐全仍为 11/21（缺 10 个象征 + 012 职责）。GPT 同步名册时可直接引用 `roster.json` 的 `avatar.image_in_repo`。

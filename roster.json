@@ -1,6 +1,6 @@
 {
   "name": "Jessica's Robot Army (JRA) roster",
-  "generated": "2026-11-17 19:31 Europe/Zurich",
+  "generated": "2026-11-17 19:36 Europe/Zurich",
   "single_source_of_truth": true,
   "sources": [
     "PERSONAS.md",
@@ -508,8 +508,8 @@
       "avatar": {
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
-        "description": "Gold J, trigrams and a star / 金色 J、卦象与星点",
-        "image_in_repo": "assets/avatars/014.png"
+        "description": "Original dark-knight-style hacker (AI-generated; not affiliated with DC/Batman): black bat-eared cowl and cape, cyan neon ring, code rain / 原创暗夜骑士风黑客头像（AI 生成，与 DC/蝙蝠侠无关联）：黑色蝠耳头罩与披风、青色霓虹圆环、代码雨",
+        "image_in_repo": "assets/avatars/014.jpg"
       },
       "mission": {
         "en": "Evaluate events and prepare participation guides, registration materials and preparation reminders.",
