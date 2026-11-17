@@ -1,6 +1,6 @@
 {
   "name": "Jessica's Robot Army (JRA) roster",
-  "generated": "2026-11-17 19:20 Europe/Zurich",
+  "generated": "2026-11-17 19:31 Europe/Zurich",
   "single_source_of_truth": true,
   "sources": [
     "PERSONAS.md",
@@ -40,8 +40,8 @@
       "duties": 20,
       "kpi": 21
     },
-    "avatar_images_in_repo": 0,
-    "avatar_described_in_repo": 14,
+    "avatar_images_in_repo": 21,
+    "avatar_described_in_repo": 15,
     "missing": [
       "001:symbol",
       "002:symbol",
@@ -67,8 +67,8 @@
       "avatar": {
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
-        "description": "MISSING: not described in repo",
-        "image_in_repo": "MISSING"
+        "description": "Photo of Elon Musk (retouched; Wikimedia Commons, CC BY-SA 3.0, see assets/CREDITS.md) / 马斯克照片头像（修图，维基共享资源 CC BY-SA 3.0，见 assets/CREDITS.md）",
+        "image_in_repo": "assets/avatars/000.png"
       },
       "mission": {
         "en": "Receive Jessica's tasks, route them to the appropriate bots, and maintain the team's role and deployment registry. Coordinate the team without taking over specialist responsibilities.",
@@ -101,7 +101,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Mounted sword-bearing knight / 骑马持剑骑士",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/001.png"
       },
       "mission": {
         "en": "Assess bot performance through efficiency, execution standards, collaboration and verifiable deliverables. Offer improvement recommendations and bring decisions requiring Jessica's judgement to her.",
@@ -131,7 +131,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Superman-style hero / 超人式英雄",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/002.png"
       },
       "mission": {
         "en": "Turn commitments into clear plans, prioritised tasks and deadline reminders. Review delays and their causes to support better planning.",
@@ -161,7 +161,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Joe Tsai-inspired figure / 蔡崇信式形象",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/003.png"
       },
       "mission": {
         "en": "Provide bookkeeping structures, reporting templates and renewal reminders. Keep sensitive financial records outside public materials.",
@@ -191,7 +191,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Investor figure (Ray Dalio-inspired) / 投资人形象",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/004.png"
       },
       "mission": {
         "en": "Research business models and support capital and fundraising preparation with evidence-based reports.",
@@ -221,7 +221,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "MISSING: not described in repo",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/005.png"
       },
       "mission": {
         "en": "Protect JRA's collaboration boundaries, permissions and resource discipline. Review sensitive operations before execution and support safe, orderly teamwork.",
@@ -254,7 +254,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "WDEO wireframe lion-head mark / WDEO 线框狮头标志",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/006.png"
       },
       "mission": {
         "en": "Support WDEO's immigration and education consulting work through public-policy research and website content updates.",
@@ -287,7 +287,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Gold orbital rings and a star / 金色轨道环与星点",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/007.png"
       },
       "mission": {
         "en": "Support JJ FIT's product and operations: organise feedback, maintain the roadmap and turn approved ideas into clear specifications.",
@@ -320,7 +320,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "MISSING: not described in repo",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/008.png"
       },
       "mission": {
         "en": "Support QCF's institutional development, cooperation research and public-facing brand content across quantum energy, life sciences and education.",
@@ -353,7 +353,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "MISSING: not described in repo",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/009.png"
       },
       "mission": {
         "en": "Write scripts, adapt content for different platforms and coordinate media planning. Publish only with Jessica's explicit approval.",
@@ -386,7 +386,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Black Batman-like guardian with a light shield / 黑色蝙蝠侠式光盾守护者",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/010.png"
       },
       "mission": {
         "en": "Organise email, prepare summaries and draft replies for review. Support communication follow-up while leaving external sending subject to Jessica's confirmation.",
@@ -416,7 +416,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Erlang Shen with the third eye / 二郎神三眼",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/011.png"
       },
       "mission": {
         "en": "Monitor competitors and relevant developments using public information. Organise findings into briefings that support informed judgement.",
@@ -446,7 +446,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "MISSING: not described in repo",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/012.png"
       },
       "mission": {
         "en": "Plan tailored journeys spanning WDEO travel services, JJ FIT health and sporting experiences, and QCF civilisation journeys.",
@@ -476,7 +476,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Shenlong, Chinese divine dragon / 中国神龙",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/013.jpg"
       },
       "mission": {
         "en": "Advance DRAGO's sports-project work, including athlete-information workflows, youth-training opportunities and its project repository.",
@@ -509,7 +509,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Gold J, trigrams and a star / 金色 J、卦象与星点",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/014.png"
       },
       "mission": {
         "en": "Evaluate events and prepare participation guides, registration materials and preparation reminders.",
@@ -542,7 +542,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Young Alan Turing, QSC core and Earth orbit / 青年图灵、QSC 核心与地球轨道",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/015.jpg"
       },
       "mission": {
         "en": "Prepare QSC Global Supercomputing Center under QCF, starting in Switzerland and rooted in Europe. Work toward trusted, green and efficient supercomputing infrastructure.",
@@ -575,7 +575,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Buffett-inspired figure / 巴菲特式形象",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/016.png"
       },
       "mission": {
         "en": "Organise public global-market information into clear briefings. Provide information, not investment advice.",
@@ -605,7 +605,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "Youthful portrait, red background, striped suit / 红底条纹西装青年肖像",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/017.jpg"
       },
       "mission": {
         "en": "Keep Jessica's documents orderly, findable and preserved. Maintain JRA's role archive and support healthy device storage.",
@@ -638,7 +638,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "MISSING: not described in repo",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/018.jpg"
       },
       "mission": {
         "en": "Develop and operate Wish Code, an AI wish-divination application drawing on the I Ching, Plum Blossom Numerology and astrology.",
@@ -671,7 +671,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "MISSING: not described in repo",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/019.png"
       },
       "mission": {
         "en": "Support biotechnology cooperation through clear documentation workflows, action-item follow-up and archiving standards. Keep substantive cooperation records private.",
@@ -701,7 +701,7 @@
         "defined": true,
         "source": "bot profile (Jessica, 2026-11-17)",
         "description": "John von Neumann figure / 冯·诺伊曼形象",
-        "image_in_repo": "MISSING"
+        "image_in_repo": "assets/avatars/020.png"
       },
       "mission": {
         "en": "Help people become capable Solo Founders across industries through Neumann Solo Founder Lab. Coordinate product and business development, website requirements, growth and fundraising preparation.",

@@ -13,7 +13,7 @@ LIVE = {"000":"General Commander 总指挥官","001":"Chief of Staff 幕僚长",
 "013":"DRAGO project 项目官","014":"Euro Hack 筹备官","015":"Supercomputing Centre 超算中心筹备","016":"Market Intelligence 股市情报官",
 "017":"Mac & Archive Mac官","018":"Wish code","019":"Biotech 诺赛基因项目","020":"Neumann Solo Founder 项目官"}
 # avatar descriptions documented in PERSONAS.md / MISSIONS.md; None = not described in repo
-AVATAR = {"001":"Mounted sword-bearing knight / 骑马持剑骑士","002":"Superman-style hero / 超人式英雄",
+AVATAR = {"000":"Photo of Elon Musk (retouched; Wikimedia Commons, CC BY-SA 3.0, see assets/CREDITS.md) / 马斯克照片头像（修图，维基共享资源 CC BY-SA 3.0，见 assets/CREDITS.md）","001":"Mounted sword-bearing knight / 骑马持剑骑士","002":"Superman-style hero / 超人式英雄",
 "003":"Joe Tsai-inspired figure / 蔡崇信式形象","004":"Investor figure (Ray Dalio-inspired) / 投资人形象",
 "006":"WDEO wireframe lion-head mark / WDEO 线框狮头标志","007":"Gold orbital rings and a star / 金色轨道环与星点",
 "010":"Black Batman-like guardian with a light shield / 黑色蝙蝠侠式光盾守护者","011":"Erlang Shen with the third eye / 二郎神三眼",
@@ -45,7 +45,8 @@ for n in ids:
     rows[n]["duties_partial"] = bool(duties and "待定" in duties)
     rows[n]["kpi"] = KPI_OVR.get(n) or (k[1].strip() if k else None)
     rows[n]["avatar_desc"] = AVATAR.get(n)
-    rows[n]["avatar_image"] = None  # no avatar image files in repo yet
+    imgs = sorted((R/"assets/avatars").glob(n + ".*"))
+    rows[n]["avatar_image"] = imgs[0].relative_to(R).as_posix() if imgs else None
     rows[n]["live_label"] = LIVE[n]
 FIELDS = ["archetype","avatar","mission","symbol","duties","kpi"]
 def checks(r):
@@ -69,7 +70,7 @@ for n in ids:
 full = [b["id"] for b in bots if b["all_complete"]]
 stats = {"bots": 21, "fields_checked": FIELDS, "all_fields_complete": len(full), "complete_ids": full,
          "field_counts": {f: sum(b["complete"][f] for b in bots) for f in FIELDS},
-         "avatar_images_in_repo": 0, "avatar_described_in_repo": sum(1 for b in bots if not b["avatar"]["description"].startswith("MISSING")),
+         "avatar_images_in_repo": sum(1 for b in bots if b["avatar"]["image_in_repo"] != "MISSING"), "avatar_described_in_repo": sum(1 for b in bots if not b["avatar"]["description"].startswith("MISSING")),
          "missing": [f"{n}:{f}" for n, f in missing]}
 (R/"roster.json").write_text(json.dumps({"name":"Jessica's Robot Army (JRA) roster","generated":now+" Europe/Zurich",
     "single_source_of_truth": True, "sources":["PERSONAS.md","MISSIONS.md","roles/NNN.md"],
@@ -85,7 +86,7 @@ f"**Last updated / 最后更新：{now} CET · Europe/Zurich（苏黎世时间�
 f"- **Bots / Bot 总数：21** (000–020)",
 f"- **All 6 fields complete / 六项全部完整：{len(full)} / 21** — {', '.join(full)}",
 "- Field coverage / 各字段覆盖：" + " · ".join(f"{f} {stats['field_counts'][f]}/21" for f in FIELDS),
-f"- Avatar: defined for 21/21 in the live bot profiles (Jessica, 2026-11-17); described in repo {stats['avatar_described_in_repo']}/21; **image files in repo 0/21** / 头像：21 个均已在 Bot 资料中设定；仓库内有文字描述 {stats['avatar_described_in_repo']}/21；**头像图片入库 0/21**",
+f"- Avatar: defined for 21/21 in the live bot profiles (Jessica, 2026-11-17); described in repo {stats['avatar_described_in_repo']}/21; **image files in repo {stats['avatar_images_in_repo']}/21** (`assets/avatars/`, credits in [assets/CREDITS.md](assets/CREDITS.md)) / 头像：21 个均已设定；仓库内有文字描述 {stats['avatar_described_in_repo']}/21；**头像图片入库 {stats['avatar_images_in_repo']}/21**",
 "- **Missing / 缺项：** " + ("; ".join(f"{n} {f}" + (" (TBD / 待定)" if f=="symbol" else " (marked 待定 / partial)" if f=="duties" else "") for n,f in missing) or "none"), "",
 "## Roster / 名册", "",
 "| No. | Role / 岗位 | Live label / 实际 Bot 名 | Archetype / 人物原型 | Avatar / 头像 | Mission / 使命 | Symbol / 象征 | Core duties / 核心职责 | KPI |",
@@ -95,7 +96,8 @@ for b in bots:
     sym = b["symbol"] if isinstance(b["symbol"], str) else b["symbol"]["en"] + "<br>" + b["symbol"]["zh"]
     sym = "❌ **MISSING** — TBD / 待定" if isinstance(b["symbol"], str) else sym
     av = b["avatar"]["description"]; av = "Set in bot profile; ⚠ not described in repo / 已在 Bot 资料设定，仓库无描述" if av.startswith("MISSING") else av
-    av += "<br>🖼 image not in repo / 图片未入库"
+    img = b["avatar"]["image_in_repo"]
+    av = (f'<a href="{img}"><img src="{img}" width="64" alt="{b["id"]} avatar"></a><br>' + av) if img != "MISSING" else av + "<br>🖼 image not in repo / 图片未入库"
     du = b["duties"].replace(" [PARTIAL: duties marked 待定]", " ⚠ **PARTIAL / 部分待定**")
     L.append("| " + " | ".join(esc(x) for x in [b["id"], b["role"], b["live_label"], b["archetype"], av,
         b["mission"]["en"]+"<br>"+b["mission"]["zh"], sym, du, b["kpi"]]) + " |")
@@ -104,11 +106,11 @@ L += ["", "## Completeness matrix / 完整度矩阵", "",
 "|---|---|---|---|---|---|---|---|---|"]
 for b in bots:
     c = b["complete"]
-    L.append(f"| {b['id']} | " + " | ".join(ck(c[f]) for f in FIELDS) + " | ❌ | " + ("✅" if b["all_complete"] else "❌") + " |")
+    L.append(f"| {b['id']} | " + " | ".join(ck(c[f]) for f in FIELDS) + " | " + ck(b["avatar"]["image_in_repo"] != "MISSING") + " | " + ("✅" if b["all_complete"] else "❌") + " |")
 L += ["", "Legend / 图例：✅ documented / 已记录 · ❌ missing or TBD / 缺失或待定. Avatar ✅ = set in the live bot profile; the image column tracks whether the picture file is committed here. 头像 ✅ 表示已在 Bot 资料中设定，最后一列表示图片文件是否已入库。", "",
 "## How to close the gaps / 补齐方式", "",
 "1. Jessica confirms the missing symbols → update MISSIONS.md → `python3 scripts/build_roster.py`. / Jessica 确认缺失象征后更新 MISSIONS.md 并重新生成。",
-"2. Export the 21 avatar images (no faces of private persons) to `assets/avatars/NNN.png`, then set `avatar_image` in the script. / 导出 21 张头像到 `assets/avatars/NNN.png` 后在脚本中登记。",
+"2. Avatar images live in `assets/avatars/NNN.(png|jpg)` (≤512 px); the script picks them up automatically. Add attribution for any third-party image to [assets/CREDITS.md](assets/CREDITS.md). / 头像图片放在 `assets/avatars/`，脚本自动识别；第三方图片须在 CREDITS 署名。",
 "3. 012 duties are still marked 待定 in `roles/012.md`. / 012 职责仍标注待定。", ""]
 (R/"ROSTER.md").write_text("\n".join(L))
 print(json.dumps(stats, ensure_ascii=False, indent=1))
