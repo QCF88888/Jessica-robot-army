@@ -147,3 +147,7 @@ Reference methodology (checked 2026-11-17): [OpenAI pricing categories](https://
 本模块已提供可运行的交互演示、严格区分输入/输出/缓存的计量模型、卡时与自建成本核算，以及本地采集和任务运行器。小规模优先评估租赁，持续高负载可评估自建；结论由利用率、质量和真实报价决定。去重不等于零成本：确认、治理、重试和失败调用都必须记账。
 
 真实 24 小时部署还需：经批准的模型适配器、私有用量日志、供应商单价、实际电表/设备分摊以及生产服务运行环境。开源源码不包含这些账号与经营数据。005 每日检查证据和效率，000 汇总并形成内部策略；只有满足验收与预算限制的内部任务才进入执行队列。公开展示不等于已接通所有真实 Bot，也不承诺固定节省率。
+
+## xAI / Grok integration
+
+See [GROK_HANDOFF.md](GROK_HANDOFF.md) and `xai-usage.mjs` for the complete-response usage converter. This is not a connected API client; current Grok runtime access and a real call remain unverified.
