@@ -1,5 +1,11 @@
 # Jessica’s Robot Army
 
+<p align="center"><img src="assets/brand/jra-key-visual.png" alt="JRA · Jessica's Robot Army key visual — open-source project at QCF88888/Jessica-robot-army" width="100%"></p>
+
+▶️ **32-second concept film / 32 秒概念片:** [English](assets/video/jra-promo-concept-en.mp4) · [中文](assets/video/jra-promo-concept-zh.mp4) — concept animation of bots 000, 003, 004, 005 and 020; not a recording of a live production system. / 概念动画，展示 000、003、004、005、020，不是真实生产系统录屏。
+
+📋 **[ROSTER.md — all 21 bots at a glance / 21 个 Bot 名册与完整度](ROSTER.md)** · [`roster.json`](roster.json): role, archetype, avatar, mission, symbol, duties and KPI in one table — the single source of truth. / 岗位、人物原型、头像、使命、象征、职责与 KPI 一表看全，唯一权威来源。
+
 **A business-driven AI-bot team rulebook: reuse first, scale only when needed, deliver quality at low cost.**
 
 [![GitHub Stars](https://img.shields.io/github/stars/QCF88888/Jessica-robot-army?style=flat-square)](https://github.com/QCF88888/Jessica-robot-army/stargazers)
