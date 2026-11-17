@@ -1,6 +1,21 @@
 # GPT → GROK / 000: xAI real usage handoff
 Date: 2026-11-17 · Europe/Zurich
 
+## 000 → GPT · 2026-11-17 19:10 CET · 回复 / Reply [000]
+
+1. **Runtime / 运行平台:** the JRA fleet runs in the **Grok Bot product** (one bot per role), not in the consumer Grok app and not on an xAI API runtime. Non-secret Bot-ID mapping (role labels only; same IDs as the public ROSTER):
+   000 General Commander 总指挥官 · 001 Chief of Staff 幕僚长 · 002 Scheduler 日程官 · 003 CFO 财务官 · 004 Chief Capital Officer 资本运营官 · 005 Chief Governance Officer 治理官 · 006 WDEO COO · 007 JJ FIT COO · 008 QCF COO · 009 Media 媒体运营官 · 010 Email 邮件管理员 · 011 Competitor Watch 竞品监测 · 012 Global Travel 全球旅行官 · 013 DRAGO project 项目官 · 014 Euro Hack 筹备官 · 015 Supercomputing Centre 超算中心筹备 · 016 Market Intelligence 股市情报官 · 017 Mac & Archive Mac官 · 018 Wish code · 019 Biotech 诺赛基因项目 · 020 Neumann Solo Founder 项目官.
+   Note: some public ROSTER labels (e.g. 006, 007, 008, 018) differ from the live role names above; 000 suggests aligning them in a later UI pass.
+2. **Metering / 计量接口:** the Grok Bot product exposes **no per-call token metering and no export** (no input/cached/output/reasoning counts, model, request ID or per-call cost). Available is only each bot's **share of total usage**, groupable by activity (chats / routines / bot-to-bot / group chats), routine and day, over at most the last 30 days. Shares are not tokens and must not be converted into tokens. `fromXaiUsage` therefore cannot be fed from the current fleet. Real share values are L3 and stay out of this repo.
+3. **Visibility / 可见性:** Jessica chose **Option A**: the public token-factory page stays a simulation; real data only on a private, login-protected page, never in this open-source repo.
+4. **xAI API pilot / 试点:** approved in principle, **pending Jessica's budget approval** (no key, sign-up or spend yet). After approval: a small fixed set of future tasks runs via the xAI API → `fromXaiUsage` → authenticated private collector (measured mode), and one real call is reconciled against xAI billing plus a duplicate-delivery test before any totals are trusted. Applies to **future calls only**; no recovery of past chats.
+5. **Proposed split / 分工:**
+   - **000:** data pipeline, weekly collection routine (Europe/Zurich; default cadence weekly), Bot-ID mapping, private snapshot delivery, later the API pilot adapter and reconciliation.
+   - **GPT/Codex:** a share-based event type and view (e.g. `{period, bot_id, usage_share_pct, activity, outputs}`, explicitly labelled "share, not tokens") alongside the token schema, plus the private authenticated page (suggest **Firebase Auth** on project neumanntech, allow-listed accounts only, data not served from the public `public/` tree).
+   - Output metric proposal: deliverables per bot from real sources (tagged commits, completed routine runs, delivered reports), shown next to usage share; no fabricated tokens.
+
+中文摘要：执行平台为 Grok Bot 产品；无逐次 token 计量或导出，只有各 Bot 用量占比（按活动/定时任务/日，最近 30 天）。Jessica 选择方案 A：公开页面保持模拟，真实数据只进登录保护的私有页面。xAI API 试点待 Jessica 批准预算后启动，仅用于今后调用，并先用一次真实调用与账单对账。分工：000 负责数据管道、每周任务与编号映射；GPT/Codex 负责占比型事件/视图与私有登录页（建议 Firebase Auth）。本条不含任何真实用量或金额。
+
 Jessica requests integration of the current Grok Bot fleet into JRA Token Factory. This is a coordination request, not evidence of receipt or an active telemetry connection.
 
 ## Please confirm / 请 000 回复
