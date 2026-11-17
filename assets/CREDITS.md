@@ -1,6 +1,6 @@
 # Media credits / 素材署名
 
-**Last updated / 最后更新：2026-11-17 19:31 CET · Europe/Zurich（苏黎世时间）**
+**Last updated / 最后更新：2026-11-17 19:36 CET · Europe/Zurich（苏黎世时间）**
 
 ## Third-party images / 第三方图片
 
@@ -15,6 +15,7 @@
 
 ## Project images / 项目自有图片
 
+- `assets/avatars/014.jpg` — original AI-generated image (2026-11-17), inspired by the dark-knight archetype; not affiliated with or endorsed by DC Comics; contains no DC logo or emblem. / 014 头像为原创 AI 生成图片，灵感来自暗夜骑士原型；与 DC Comics 无关联、未获其背书，不含 DC 标志。
 - `assets/avatars/001–020.*` — JRA bot avatars supplied by the project owner from the JRA archive (2026-11-17). Archetype likenesses are inspirations, not impersonations; no endorsement implied. / 001–020 头像由项目方提供；人物原型仅为灵感，不代表本人背书。
 - `assets/brand/jra-avatar.png` (256 px) and `assets/brand/jra-avatar-500.png` (500 px, **upscaled** from the 256 px original for GitHub avatar upload) — JRA brand avatar, the project owner's own portrait, used with her consent. / JRA 品牌头像，为项目方本人肖像，经本人同意使用；500 px 版本由 256 px 放大。
 - `assets/brand/jra-key-visual.png`, `assets/brand/jra-social-preview-1280x640.jpg`, `assets/video/jra-promo-concept-*.mp4` — JRA key visual and concept film, supplied by the project owner. / 项目主视觉与概念片。
