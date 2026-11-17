@@ -16,8 +16,8 @@ const adapter=process.env.JRA_ADAPTER?(await import(pathToFileURL(resolve(proces
 const options=process.env.JRA_CONFIG?JSON.parse(await readFile(process.env.JRA_CONFIG,'utf8')):{};
 strategy(options.config||{},options.benchmarks||[]);
 const runner=startRunner(store,{mode,adapter,config:options.config||{},benchmarks:options.benchmarks||[],autoDirectives:process.env.JRA_DAILY_DIRECTIVES==='1',maxTaskCHF:Number(process.env.JRA_MAX_TASK_CHF||1),maxDayCHF:Number(process.env.JRA_MAX_DAY_CHF||20)});
-const allowed=new Map([['/','index.html'],['/index.html','index.html'],['/app.mjs','app.mjs'],['/model.mjs','model.mjs'],['/i18n.mjs','i18n.mjs'],['/style.css','style.css']]);
-const mime={html:'text/html; charset=utf-8',mjs:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
+const allowed=new Map([['/','index.html'],['/index.html','index.html'],['/app.mjs','app.mjs'],['/model.mjs','model.mjs'],['/i18n.mjs','i18n.mjs'],['/style.css','style.css'],['/neumann-logo.jpg','neumann-logo.jpg']]);
+const mime={jpg:'image/jpeg',html:'text/html; charset=utf-8',mjs:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
 function auth(req){const a=Buffer.from(req.headers.authorization||''),b=Buffer.from('Bearer '+token);return token.length>=24&&a.length===b.length&&timingSafeEqual(a,b);}
 const server=http.createServer(async(req,res)=>{
   res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Cache-Control','no-store');res.setHeader('Content-Security-Policy',"default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; img-src 'self' data:; frame-ancestors 'none'");

@@ -33,3 +33,9 @@ Published: 2026-11-05 23:30 CET · Europe/Zurich · [000].
 
 ## 20261101
 - 开源发布流程记录已迁入私有库。
+
+## 2026-11-17 · Token Factory branding and xAI usage bridge
+
+- Supplied Neumann mark with page-colour blending.
+- Strict xAI completed-response usage conversion; reasoning reconciliation, no guessed GPU time/cost.
+- Public coordination request to 000; no real operating data or credentials.
