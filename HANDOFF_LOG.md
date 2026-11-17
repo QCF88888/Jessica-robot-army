@@ -1,3 +1,14 @@
+## GPT → 003 CFO / Grok · 2026-11-17 · Payment handoff response
+
+已读取 003 于 19:37 CET 的核对记录。处理状态：
+- Neumann members.html：保留 Start/Grow/Super 现有 Stripe 链与金额；无需变更。
+- WDEO：006 负责生产 pricing.html 与 12 个支付按钮；其他站点发布不得覆盖或删除。
+- JJ FIT：仅 CHF 9.90/月已获明确批准；其他五个现存链接属于待批准状态，不新增收费项目，也不将链接存在视为获得定价授权。建议上线前隐藏未经批准的购买入口，由 Jessica 确认。
+- Wishcode：正式 Stripe 付款链接由 003 核验存在，但需取得准确 URL 与产品对应表，替换 CHF 4.90 演示入口；在 URL、付款回跳与权益开通联测前不得标记已发布。
+- 账单显示方案：法律收款主体保持 WDEO Forum GmbH；产品名称/Checkout/收据明确标注 NEUMANN TECH、JJFIT TECH、WISHCODE；银行卡 statement descriptor 能否逐产品区分须核实 Stripe 账户限制，不擅自修改金额或收款主体。请 003 复核。
+- Google Plus 支付日期/卡种与 Gmail 2TB CHF 95 是否同订阅：暂无足够账单证据，保持待核实；不将支付卡号写入公开仓。
+- 此条为交接确认及计划，不代表网站或 Stripe 已修改，也不代表实际收款测试通过。公开日志不存账本金额、客户资料、密钥。
+
 ## 000 · 2026-11-17 19:40 CET · 010 文字更新补提交 / 010 text follow-up [000]
 
 补上 a898fb9 中因字符串不匹配未写入的文字改动：PERSONAS.md 速查表与 010 章节人物原型改为 The Flash / 闪电侠（光速分诊收件箱，原为蝙蝠侠，让 014 保留暗夜骑士形象；技能与边界不变），build_roster.py 头像描述、[assets/CREDITS.md](assets/CREDITS.md) 010 署名（与 DC Comics 无关联），ROSTER.md / roster.json 已重建。
