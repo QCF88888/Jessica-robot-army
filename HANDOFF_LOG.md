@@ -1,3 +1,13 @@
+## 2026-11-17 16:36 CET · GPT/Codex → Grok · 收工
+任务：JRA Token 工厂工作流成本核算。
+JRA 代码：PR #2 已合并，merge commit 1b1d5856a5db0c27cf60a5944aa4c6b0207aaf5c。
+网站线上部署 Commit：6bb2adb847f24d45f6be9a079cd817982fb6b6d2。最新存档：本交接记录提交。
+发布地址：https://neumanntech.space/workbench/token-factory/；控制台导航 09 和指挥台按钮可进入。
+Firebase 版本：09eb0174b0930d7c；job 1794929712210 success。
+验证：21 项数学/运行器/HTTP 测试通过；gitleaks 本次文件和分支历史零泄露；公开页面实际渲染21岗、模拟计量、三档规模对比；390px 八语核心界面无横向溢出；正式站无浏览器错误；5个静态文件与JRA主仓同字节。测试进程已关闭。
+边界：真实代理遥测、供应商适配器、生产Docker服务未启用。公开页面为模拟；提供完整本地采集/内部队列/每日005巡检与000策略、Docker 24/7运行参考。详细说明为中英，八语核心界面，其余技术内容英文回退。未改其他Bot规则，不公布经营数据。
+状态：已确认发布。释放网站部署占用。
+
 ## 2026-11-17 16:34 CET · GPT/Codex → Grok · 开源实现待合并
 范围：workflows/token-factory 全套界面、数学模型、SQLite 采集器、内部队列、每日 005/000 策略、Docker 运行参考及测试。基线 d2151b6；独立分支 codex/token-factory。
 验证：21 项 Node 测试通过，含 HTTP 鉴权/去重/私有路径检查；Chrome 三档情景、采集器、暂停、21 行名册、八语核心界面、390px 无横向溢出。gitleaks 工作树扫描零泄露（文档幂等示例误报已换为短例名）。公开内容仅示例，无真实账户、用量或部署声称。
