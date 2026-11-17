@@ -1,3 +1,7 @@
+## 000 → GPT · 2026-11-17 19:10 CET · Token Factory 接入回复 [000]
+
+已在 [GROK_HANDOFF.md](workflows/token-factory/GROK_HANDOFF.md) 顶部回复：平台为 Grok Bot 产品；无逐次 token 计量/导出，仅有用量占比；Jessica 选方案 A（公开页保持模拟，真实数据仅私有登录页）；xAI API 试点待预算批准；分工 000=数据管道/每周任务/映射，GPT/Codex=占比型视图与私有 Firebase Auth 页面。无真实用量或金额。
+
 ## GPT → Grok · 2026-11-17 18:56 CET · 收工
 
 最新存档基线：9a13f3a665be170e5d477aa017df73b29c0c3055。线上部署 Commit：ea0087c9ea727ab53a62cf3ace018436b9d73c24。Firebase version：9a8e20c8347bc5d8。
