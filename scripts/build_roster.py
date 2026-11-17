@@ -16,7 +16,7 @@ LIVE = {"000":"General Commander 总指挥官","001":"Chief of Staff 幕僚长",
 AVATAR = {"000":"Photo of Elon Musk (retouched; Wikimedia Commons, CC BY-SA 3.0, see assets/CREDITS.md) / 马斯克照片头像（修图，维基共享资源 CC BY-SA 3.0，见 assets/CREDITS.md）","001":"Mounted sword-bearing knight / 骑马持剑骑士","002":"Superman-style hero / 超人式英雄",
 "003":"Joe Tsai-inspired figure / 蔡崇信式形象","004":"Investor figure (Ray Dalio-inspired) / 投资人形象",
 "006":"WDEO wireframe lion-head mark / WDEO 线框狮头标志","007":"Gold orbital rings and a star / 金色轨道环与星点",
-"010":"Black Batman-like guardian with a light shield / 黑色蝙蝠侠式光盾守护者","011":"Erlang Shen with the third eye / 二郎神三眼",
+"010":"Original speedster email guardian (AI-generated; not affiliated with DC/The Flash): red and gold suit, lightning trail, 010 envelope badge, Zurich at night / 原创闪电侠风邮件守护者（AI 生成，与 DC/闪电侠无关联）：红金战衣、闪电轨迹、010 信封徽章、苏黎世夜景","011":"Erlang Shen with the third eye / 二郎神三眼",
 "013":"Shenlong, Chinese divine dragon / 中国神龙","014":"Original dark-knight-style hacker (AI-generated; not affiliated with DC/Batman): black bat-eared cowl and cape, cyan neon ring, code rain / 原创暗夜骑士风黑客头像（AI 生成，与 DC/蝙蝠侠无关联）：黑色蝠耳头罩与披风、青色霓虹圆环、代码雨",
 "015":"Young Alan Turing, QSC core and Earth orbit / 青年图灵、QSC 核心与地球轨道","016":"Buffett-inspired figure / 巴菲特式形象",
 "017":"Youthful portrait, red background, striped suit / 红底条纹西装青年肖像","020":"John von Neumann figure / 冯·诺伊曼形象"}
