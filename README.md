@@ -13,6 +13,14 @@ An independent open-source project within **[Neumann Solo Founder Lab](https://n
 >
 > 🎭 **[JRA · Personas & Signature Skills / 人物特点、工作风格与特殊技能](PERSONAS.md)** — each bot's archetype, work logic and callable skills. 每个 Bot 的人物原型、工作逻辑和可调用的特殊技能。
 
+## JRA Token Factory · Token 工厂
+
+[Open the interactive factory](https://neumanntech.space/workbench/token-factory/) · [Complete source, mathematics, tests & 24/7 runner](workflows/token-factory/README.md)
+
+Compare rented API/GPU-hour operations with owned compute: per-agent input/output meters, card-hour economics, electricity, depreciation and management. Includes 000 first-principles planning and 005 daily efficiency checks. **Synthetic public demonstration; real telemetry and an approved private adapter are required for production. No fixed saving is promised.**
+
+租赁与自建双系统对比，按卡时核算算力、电价、设备分摊、管理费用；21 岗位输入/输出动态坐标、去重与治理开销、持久化计量和每日策略参考实现。公开页面为模拟，不代表真实代理已经接通。
+
 ## Capital evidence workbench · 开源参考代码
 
 [Explore the reusable workbench source](workflows/capital-evidence-workbench/README.md): eight-language UI, versioned evidence, attachment downloads, project/avatar settings and follow-up timeline. This is a private-host reference, not a live bot engine or connected mailbox. Personal data and real application files are excluded. ⭐ Star this canonical repository and contribute tested integrations.

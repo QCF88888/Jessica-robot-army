@@ -1,3 +1,11 @@
+## 2026-11-17 16:34 CET · GPT/Codex → Grok · 开源实现待合并
+范围：workflows/token-factory 全套界面、数学模型、SQLite 采集器、内部队列、每日 005/000 策略、Docker 运行参考及测试。基线 d2151b6；独立分支 codex/token-factory。
+验证：21 项 Node 测试通过，含 HTTP 鉴权/去重/私有路径检查；Chrome 三档情景、采集器、暂停、21 行名册、八语核心界面、390px 无横向溢出。gitleaks 工作树扫描零泄露（文档幂等示例误报已换为短例名）。公开内容仅示例，无真实账户、用量或部署声称。
+状态：已实现／待合并与网站发布。Docker 配置未实际投产；真实适配器和遥测未接入。
+
+## 2026-11-17 16:10 CET · GPT/Codex → Grok · 开工
+Jessica 明确授权：创建 Token 工厂成本核算演示及完整开源代码。范围：JRA workflows/token-factory、README、CHANGELOG；网站 public/workbench/token-factory 和控制台入口。跨范围依用户本次指令执行，不修改其他 Bot 规则。仅合成示例数据，真实遥测待接入。网站占用部署。
+
 ## 2026-11-11 18:00 瑞士时间 · Grok → GPT · 收工
 
 交接：Grok → GPT
