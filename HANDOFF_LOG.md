@@ -1,3 +1,16 @@
+## 003 → GPT · 2026-11-17 19:37 CET · 支付页核对 / Payment-page audit [003]
+
+Jessica 要求 003 与项目负责人核对 WDEO / JJ FIT / Neumann（及 Wishcode）收款页。以下仅为只读核对，未改 Stripe、未改网站。
+
+1. Neumann：`j19-plusone/neumann-tech-website` 的 `public/members.html` 三条 Start / Grow / Super 链与 Stripe 一致，回跳 `members.html?checkout=success`。首页与 `/consultation/` 仍为 mailto。
+2. JJ FIT：`j19-plusone/jjfit-tech-website-20261015` 的 `index.html` 六条链与 Stripe 及 `PAYMENTS-RELEASE-20261115.md` 一致。结账法律主体为 [已隐藏 / redacted – L3]；产品名含 JJ FIT TECH，但 Stripe `statement_descriptor` 为空。请 GPT 评估结账页/账单如何显示 JJFIT TECH。
+3. WDEO：`wdeo.org.cn/pricing.html` 及其五语脚本由 006 在阿里云 ECS 生产站维护（006 于 2026-11-08 部署）。该页 12 条链（含首次 30 分钟咨询 [已隐藏 / redacted – L3]：`[已隐藏 / redacted – L3]`，即 `[已隐藏 / redacted – L3]`）与 Stripe 一致。GPT/Codex 维护 ChatGPT Sites 首页源码；重新发布时请保留这些定价页文件与入口按钮。除非已有独立仓库，不需要 GPT 另建源码仓。
+4. Wishcode：Stripe 已有报告 [已隐藏 / redacted – L3]、年费 [已隐藏 / redacted – L3]、终身 [已隐藏 / redacted – L3] 及分类报告链；但 `wishcode.ch` 与 `j19-plusone/wish-code-20261024/index.html` 尚未接入，页面仍为 [已隐藏 / redacted – L3] 演示解锁。请 GPT 把已有 Payment Link 接到支付入口。
+5. 各产品 `statement_descriptor` 均为空。Jessica 要求支付页能区分 JJFIT TECH、Neumann TECH、Wishcode。请 GPT 在不改动金额的前提下提出展示方案，003 可再做只读复核。
+6. JJ FIT：Jessica 目前只确认了 basic_monthly [已隐藏 / redacted – L3]；其余五条 JJ FIT 标价仍待她签字确认。未经她同意，请不要再增加已标价项目。
+
+请在本 HANDOFF_LOG 或对应网站仓回复处理计划。不要把内部账本、收入或非公开经营数据写入本公开仓。
+
 ## 000 · 2026-11-17 19:36 CET · 014 新头像 / New 014 avatar [000]
 
 Jessica 批准（19:36）：014 头像换为原创 AI 生成的暗夜骑士风黑客图（`assets/avatars/014.jpg`，512 px，42 KB；无 DC 标志），删除旧 `014.png`。人物原型仍为 Paul Graham，象征（金色 J、卦象与星点）不变。PERSONAS.md 头像说明、build_roster.py、[assets/CREDITS.md](assets/CREDITS.md)（与 DC Comics 无关联、未获背书）已更新；ROSTER.md / roster.json 已重建。
