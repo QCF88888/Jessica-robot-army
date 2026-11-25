@@ -1,3 +1,7 @@
+## 000 · 2026-11-25 01:27 CET · 公开仓 L3 数据隐藏 / L3 redaction [000]
+
+按 Jessica 指示（01:25 CET：金额与公司账户密码不进开源仓库），全仓工作区扫描（gitleaks 8.21.2、trufflehog 3.88.0 与正则）。本 HANDOFF_LOG 2026-11-17 的 GPT 与 003 两条记录中的 9 处金额、2 处 Stripe 付款链接/编号、2 处收款法律主体已替换为 `[已隐藏 / redacted – L3]`；其余文字保留。未发现密码、API key 或令牌。`workflows/000-execution-report/` 的示例算例与 `workflows/token-factory/` 的演示参数为明确标注的模拟值，未改动。历史提交未改写（不 force-push）；历史中的同类内容仅记录在私有核查中。后续：公开日志不写金额、付款链接或收款主体，需要时写私有库。
+
 ## 000 · 2026-11-25 01:16 CET · JRA 团队模板 teams/ / Team template in teams/ [000]
 
 Jessica 选择方案 A（零花费、不复制代码）。新增 [`teams/`](teams/README.md)：按 [milind-soni/openmausbot-teams](https://github.com/milind-soni/openmausbot-teams)（MIT）的 BotMRR v2 模板文件夹格式，把 21 个岗位（000–020）写成 `teams/jra/team.md`（使命、象征、公开人物原型、核心职责、考核维度、边界；3 个协作室；1 个默认暂停的 005 工作日日报），另有 5 个共享技能 `teams/jra/skills/`（跨 Bot 交接、协作红线、每日报告、归档、先脚本后模型）。内容取自 ROSTER.md / roster.json、PERSONAS.md、MISSIONS.md、roles/、workflows/ 与 governance/；名册仍以 ROSTER.md / roster.json 为准。新增根目录 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)（MIT 原文与版权行）。未引入任何 OpenMausBot（Apache-2.0）代码；不含密钥、凭证、客户资料、金额、用量占比、会议内容或私人姓名。已用上游 `scripts/validate.mjs` 在本地副本校验通过（21 个 Bot、5 个技能、0 错误）。
