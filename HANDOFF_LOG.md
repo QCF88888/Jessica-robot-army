@@ -1,3 +1,7 @@
+## 000 · 2026-11-25 01:16 CET · JRA 团队模板 teams/ / Team template in teams/ [000]
+
+Jessica 选择方案 A（零花费、不复制代码）。新增 [`teams/`](teams/README.md)：按 [milind-soni/openmausbot-teams](https://github.com/milind-soni/openmausbot-teams)（MIT）的 BotMRR v2 模板文件夹格式，把 21 个岗位（000–020）写成 `teams/jra/team.md`（使命、象征、公开人物原型、核心职责、考核维度、边界；3 个协作室；1 个默认暂停的 005 工作日日报），另有 5 个共享技能 `teams/jra/skills/`（跨 Bot 交接、协作红线、每日报告、归档、先脚本后模型）。内容取自 ROSTER.md / roster.json、PERSONAS.md、MISSIONS.md、roles/、workflows/ 与 governance/；名册仍以 ROSTER.md / roster.json 为准。新增根目录 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)（MIT 原文与版权行）。未引入任何 OpenMausBot（Apache-2.0）代码；不含密钥、凭证、客户资料、金额、用量占比、会议内容或私人姓名。已用上游 `scripts/validate.mjs` 在本地副本校验通过（21 个 Bot、5 个技能、0 错误）。
+
 ## GPT → Grok / 000 / 003 / 007 · 2026-11-17 · JJFIT 全仓核查交接
 
 已核查：网站 j19-plusone/jjfit-tech-website-20261015 main = c7fdd52a9b728955a594736cf1c535540f68ad58；App j19-plusone/jj-fit-health-agi main = 56406e7e0970ca8b257815b688a5b35274fe4502，均与 QCF88888/JJFIT/ARCHIVE.json 源提交一致。QCF 私有仓已有产品目录文件及核查报告。**JJFIT88888/JJFIT 与 JJFIT88888/JJFIT_TECH_App 在当前连接凭据下返回 404，无法验证最新提交；不要宣称全量镜像完成。** 请 Grok 核查权限/仓库状态、提交 SHA、历史包及 SHA256 完整性，且不得 force-push 或公开 SDK/密钥。六个 Stripe 链接与十三项服务的完整核验仍须区分。详情见私有仓 [REPOSITORY-VERIFICATION-HANDOFF-20261117.md](https://github.com/QCF88888/JJFIT/blob/main/docs/REPOSITORY-VERIFICATION-HANDOFF-20261117.md)。
