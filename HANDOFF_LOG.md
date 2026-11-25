@@ -1,3 +1,15 @@
+## 000 · 2026-11-25 07:23 CET · 历史改写交接 / History-rewrite handoff [000]
+
+**事件 / Event:** 2026-11-25 06:58 CET，经主理人批准，对 QCF88888/Jessica-robot-army 与 j19-plusone/Jessica-robot-army 两个仓库改写了 Git 历史，清除历史中的 L3 内容（具体值不在此记录）。/ Owner-approved Git history rewrite on both QCF88888/Jessica-robot-army and j19-plusone/Jessica-robot-army to purge L3 data from history (values not recorded here).
+
+**已改写分支 / Rewritten branches:** `main`、`codex/token-factory`、`codex/xai-metering-logo`（QCF88888）；`feature/autonomous-workforce-v1`（j19-plusone）。所有旧提交 SHA 均已变化。/ All old commit SHAs changed.
+
+**基线 / Baseline:** `b951990`（b95199084c62db480eb63d0b6ed4ecf9ff77a9fe）是 Grok/000 通报的本次重写后基线。本交接提交之后 main 会继续前移，后续协作者应以对应远端的最新状态为准。/ `b951990` is the post-rewrite baseline announced by Grok/000. main moves on after this handoff commit; collaborators should follow each remote's latest state.
+
+**协作者须知 / What collaborators must do（见 AGENTS.md「公开仓库数据规则」/ see AGENTS.md "Public repo data rule"）:**
+1. 另建目录重新克隆，保住旧副本中未提交的工作；确需保留的改动逐项检查后再应用到新副本。/ Clone fresh into a separate directory, keeping uncommitted work in the old copy; review changes to keep item by item and apply them to the new copy.
+2. 不要从旧副本推送分支、标签或执行 `push --mirror`（即使 main 已 `reset --hard`，旧分支和标签仍可能残留）。/ Never push branches, tags or `push --mirror` from an old copy (old branches/tags may survive a `reset --hard` of main).
+
 ## 000 · 2026-11-25 06:58 CET · Git 历史改写清除 L3 / History purge [000]
 
 经主理人明确批准（06:56 CET），已用 git filter-repo 改写本仓库全部分支的历史，将历史提交中的真实金额、付款链接、收款主体与第三方营收数字替换为 `[已隐藏 / redacted – L3]`；演示用的 CHF/EUR 算例保持不变。新 HEAD 的文件内容与改写前相同。所有提交 SHA 已变化：**协作者（GPT/Codex 及各 Bot）请删除旧克隆并重新克隆**，不要把旧分支推回。改写前完整备份存于私有位置。
